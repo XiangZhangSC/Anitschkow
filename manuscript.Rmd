@@ -1,0 +1,182 @@
+---
+title: "Effects of PCSK9 Inhibition With Evolocumab on Lipoprotein Metabolism in subjects with elevated Lp(a)"
+output: word_document
+bibliography: /home/xiang/Documents/Bibliography/lpa.bib
+csl: circulation.csl
+---
+
+Xiang Zhang, PhD$^1$,
+Lotte C.A. Stiekema, MD$^2$,
+Erik S.G. Stroes, PhD$^2$,
+Albert K. Groen, PhD$^1$
+
+1. Department of Experimental Vascular Medicine, Amsterdam University Medical Center, University of Amsterdam, Meibergdreef 9, 1105 AZ Amsterdam, The Netherlands
+2. Department of Vascular Medicine, Amsterdam University Medical Center, University of Amsterdam, Meibergdreef 9, 1105 AZ Amsterdam, The Netherlands
+
+# Abstract
+
+Background: 
+Epidemiological studies show that subjects with elevated lipoprotein(a) [Lp(a)] have higher risk for developing cardiovascular diseases. 
+Inhibition of proprotein convertase subtilisin/kexin type 9 (PCSK9) is one of the limited options to reduce Lp(a). 
+In this study, we aimed to investigate the effects of PCSK9 inhibition with evolocumab on lipoprotein metabolism in subjects with elevated Lp(a).
+
+Methods:
+We performed metabolic profiling of plasma samples derived from 30 individuals (placebo N = 14; evolocumab N = 16). 
+By applying Bayesian lognormal regression, we assessed the effects of evolocumab treatment on circulating Lp(a) as well as 14 lipoprotein subclasses. 
+Our further regression analysis revealed the distribution of LDL particles with and without apolipoprotein(a) [apo(a)] before and after evolocumab treatment.
+
+Results:
+We identified that evolocumab treatment for 16 weeks resulted in 18.9% reduction of circulating Lp(a), coupled with substantial reduction of VLDL, IDL and LDL particles. 
+Moreover, we identified that evolocumab treatment not only reduced LDL particle concentrations, but also the distributions between LDL particles with and without apo(a). 
+
+Conclusions:
+Based on our analysis, we suggest that the LDL particles with and without apo(a) tail may have different affinity for binding to the LDL receptor. 
+Evolocumab-induced reduction of LDL particles may mainly correspond to the reduction of LDL particles without apo(a).
+
+# Introduction
+
+Lipoprotein(a) [Lp(a)] is an independent risk factor for cardiovascular diseases, and often considered as a low-density lipoprotein (LDL)-like particle with an apolipoprotein(a) [apo(a)] tail produced by *LPA*. 
+Unlike LDL-cholesterol lowering, limited therapeutic options are available to reduce plasma Lp(a) concentration. 
+Proprotein convertase subtilisin/kexin type 9 (PCSK9) monoclonal antibody such as evolocumab has been shown to lower Lp(a) [@Raal2014; @Watts2017; @Shapiro2019].  
+Evolocumab (also called AMG 145) is a fully human monoclonal antibody that targets PCSK9 and prevents it from binding to the LDL receptor. 
+Although evolocumab-induced Lp(a) reduction was linked to enhanced LDL receptor mediated uptake and attenuated Lp(a) production, the mechanism of Lp(a) lowering by PCSK9 inhibition is unknown [@Romagnuolo2015; @Raal2016; @Watts2018]. 
+In the current study, we aim to study the effects of PCSK9 inhibition with evolocumab on lipoprotein metabolism in subjects with elevated Lp(a). 
+We decided to focus on lipoprotein metabolism, because genetic inhibition of PCSK9 and statin therapy were found to have similar metabolic effects, but differ in very-low-density lipoprotein (VLDL) metabolism [@Sliz2018]. 
+So far, effects of PCSK9 inhibition with monoclonal antibody on lipoprotein metabolism were only assessed in healthy volunteers [@Reyes-Soffer2017]. 
+The next step is to investigate the metabolic effects of PCSK9 inhibition on lipoprotein metabolism in subjects with high risk for cardiovascular diseases. 
+To this end, we performed metabolic profiling of plasma samples derived from 30 individuals (placebo 14; evolocumab 16) with elevated Lp(a). 
+We identified that despite evolocumab treatment for 16 weeks resulted in 18.9% reduction of Lp(a), coupled with substantial reduction of VLDL, IDL and LDL particles.   
+Our further analysis revealed that evolocumab treatment not only reduced LDL particle concentrations, but also changed the distribution between LDL particles with and without apo(a). 
+
+# Methods
+
+## Study design
+
+This was a site-specific sub study of the ANITSCHKOW trial (NCT02729025) conducted at the Amsterdam UMC in The Netherlands between April 2016 and July 2017. 
+The ANITSCHKOW trial was a phase 3b, multicenter, randomized, double-blind, placebo-controlled trial using subcutaneous injections of evolocumab 420mg Q4W for 16 weeks as investigational product [@Stiekema2018].
+The study was conducted in accordance to the principles of the Declaration of Helsinki and the study protocol was approved by the ethic committee of the Amsterdam UMC. 
+
+Patients were found to be eligible for enrollment in the ANITSCHKOW trial when they were ≥ 50 years of age, had a fasting LDL-C of ≥ 2.6 mmol/L (100mg/dL), and an Lp(a) of ≥ 125nmol/L (50mg/dL). 
+At time of randomization, study subjects who were on lipid lowering treatment had to be on a stable dosing regimen for at least 8 weeks. 
+Exclusion criteria were among others, diabetes mellitus and a cardiovascular event within three months prior to randomization. 
+The complete list of eligibility criteria was reported previously [@Stiekema2018].
+
+## Biochemical measurements
+
+Blood samples were obtained at time of randomization and sixteen weeks after treatment. 
+Patients were fasting for ≥ 9 hours for both blood withdrawals. 
+Lipoprotein(a) levels were measured using an isoform-independent immunoturbidometric assay (Polymedco, Cortlandt Manor, NY, USA) and reported in nmol/L. 
+
+## Metabolite quantification
+
+Quantification of 14 lipoproteins was performed by using a high-throughput NMR metabolomics platform (Nightingale, Austria)
+The following 14 lipoprotein subclasses were quantified: 
+extremely large (average particle diameter >75 nm), 
+very large (average particle diameter 64.0 nm), large (53.6 nm), medium (44.5 nm), small (36.8 nm) and very small VLDL (31.3 nm); 
+intermediate density lipoprotein (IDL; 28.6 nm); 
+three LDL subclasses, i.e. large (25.5 nm), medium (23.0 nm) and small LDL (18.7 nm); 
+and four HDL subclasses, i.e. very large (14.3 nm), large (12.1 nm), medium (10.9 nm) and small HDL (8.7 nm).
+
+## Statistical analysis
+
+### Effects of evolocumab on Lp(a) and lipoprotein particles
+
+The outcome variable ($y$) was concentration of Lp(a) or one of the 14 lipoprotein subclasses. 
+Two predictor variables were used: 1) evolocumab treatment (evolocumab, $T_i$ = 1; placebo $T_i = 0$); 2) baseline Lp(a) or lipoprotein particle concentration ($x$).
+The baseline concentrations were centered and scaled so that the mean is 0 and standard deviation is 1.
+
+To assess metabolic effects of evolocumab treatment, we ran lognormal regression analysis. 
+The lognormal distribution was chosen to model the outcome variable because its values were positive continuous. 
+Due to missing observations in outcome variables, we applied the Bayesian approach to handle the missing data. 
+There are two types of missing values, which are as follows: 
+(1) when the concentration of a metabolite is below the limit of detection, 
+or (2) when values were rejected by the automatic sample and measurement quality control procedure in the Nightingale pipeline. 
+All the missing observations were assumed missing at random and treated as parameters.
+Values were randomly drawn from a lognormal distribution. 
+Regarding the missing values that were below the limit of detection, the imputed values were constrained between zero and the minimal observed value. 
+We fitted the model by running Hamiltonian Markov Chain Monte Carlo in the program Stan (version 2.18.3).
+We ran four Markov chains with 2000 iterations in each chain. 
+Results were presented with the posterior mean of lognormal regression coefficient with 95% credible interval (CI). 
+The lognormal regression coefficient can be interpreted as the expected proportional change in the metabolite concentration.
+
+### Effects of evolocumab on composition of LDL particles
+
+Because Lp(a) is often considered to comprise a LDL particle and covalently bound apo(a), we assumed that a pool of LDL particles is comprised by LDL particles with and without apo(a). 
+In the Nightingale platform, three kinds of LDL particles (large, medium and small VLDL) were profiled. 
+To identify the proportion of particles with apo(a) in each of these three pools, we ran Bayesian regression analysis. 
+The outcome variable ($y$) was concentration of Lp(a). 
+Three predictor variables were used: 1) Large LDL particle concentration $x_1$; 2) Medium LDL particle concentration ($x_2$); 3) Small LDL particle concentration ($x_3$). 
+We excluded the intercept from our regression model and used the beta distribution $Beta(1,1)$ as the prior distribution for the regression coefficients. 
+Because of the same motivation dealing with missing data, we applied the Bayesian approach. 
+As mentioned above, we fitted the model by running four Markov chains with 2000 iterations in each chain. 
+The regression coefficients are interpreted as proportion of LDL particles with apo(a) tail. 
+
+# Results
+
+The current study included 30 patients (evolocumab, n = 16; placebo, n = 14). 
+Baseline characteristics of the two groups were comparable and provided in Table 1. 
+
+## Effects on lipoprotein particles
+
+Evolocumab treatment for 16 weeks resulted in mean 18.9% (95% credible interval: 7.51% to 29.2%) reduction in Lp(a) compared with placebo (Figure 1). 
+
+![Figure 1 Evolocumab treatment for 16 weeks resulted in mean (95% credible interval) reduction in Lp(a) compared to placebo group: 24.5% (14.0% to 35.5%)](./Treatment_effect_lpa.png)
+
+To identify the corresponding effects of evolocumab on lipoprotein metabolism, we focused on the 14 lipoprotein subclasses. 
+We observed that evolocumab treatment resulted in substantial reduction in particle concentration of extremely large (-2.09 [-4.25 -0.284]), very large (-2.87 [-5.53 -0.488]), large (-0.973 [-1.69, -0.350]), medium (-0.702 [-0.979, -0.413]), small (-0.492 [-0.610 -0.367]) and very small VLDL (-0.640 [-0.770 -0.515]) compared with placebo.
+We also observed that compared with placebo evolocumab treatment resulted in particle concentration reduction in IDL (-0.765 [-0.930, -0.587]), large (-0.842 [-1.05 -0.657]), medium (-0.901 [-1.12, -0.698]) and small LDL (-0.810 [-1.00, -0.610]). 
+In contrast to VLDL and LDL particles, we observed that evolocumab treatment resulted in increasing concentrations of medium HDL particle (0.119 [0.0366, 0.200]) (Figure 2).
+
+![Figure 2 Mean difference between evolocumab and palacebo group, adjusting for pre-treatment lipoprotein particle concentrations. Circles represent the posterior means. Lines refer to the 95% credible intervals](./Treatment_effect_lipoproteins.png)
+
+## Effects on LDL particle compositions
+
+Lp(a) is thought to be comprised of a LDL particle and a covalently bound apo(a). 
+In the Nightingale metabolomics platform, three LDL particles, including large, medium and small LDL, were profiled. 
+At baseline, we identified that on average 43.9% (95% credible interval [0.0102%, 89.3%]) large LDL, 40.9% ([0.00807%, 88.6%]) medium LDL particles and 50.5% ([5.39% 97.3%]) small LDL particles were with apo(a) (Figure 3). 
+The correlations of LDL-apo(a) proportion between these three LDL particles were -0.4 (large and medium LDL), -0.62 (large and small LDL) and -0.42 (medium and small LDL). 
+
+![Figure 3 Posterior mean of LDL-apo(a) proportion in large, medium and small LDL particles. Each dot (in total 4000 dots) is a mean proportion of LDL particles with apolipoprotein(a) sampled from the posterior distribtuions. The marginal distribution of the posterior mean was on the diagnal. The pearson correlation coefficients were shown](./Lpa_LDL_baseline.png)
+
+After treatment of evolocumab, on average 76.5% (41.5%, 100%) large LDL particles were with apo(a). 
+In the pool of medium LDL particles, on average 69.2% (25.5%, 100%) of them were with apo(a). 
+Regarding small LDL particles, on average 75.8% (39.3%, 100%) of them were with apo(a).
+
+![Figure 4 Posterior mean of LDL-apo(a) proportion in large, medium and small LDL particles. Each dot (in total 4000 dots) is a mean proportion of LDL particles with apolipoprotein(a) sampled from the posterior distribtuions. The marginal distribution of the posterior mean was on the diagnal. The pearson correlation coefficients were shown](./Lpa_LDL_visit2.png)
+
+# Discussion
+
+In the current study, evolocumab treatment for 16 weeks resulted in on average 18.9% reduction in Lp(a) compared with placebo.
+Our detailed lipoprotein profiling revealed that treatment of evolocumab substantially reduced concentrations of VLDL, IDL and LDL particles. 
+Our observation is consistent with the previous study, in which evolocumab treatment not only reduced concentrations of LDL particles, but also substantially reduced triglyceride-rich lipoprotein particles [@Toth2018].
+The next question we came up with is "why we observed large effect of evolocumab on VLDL, IDL and LDL particle concentrations but relatively small effect on Lp(a)?" 
+To address the question, we analyzed the composition of LDL particles. 
+Because Lp(a) is often thought to be comprised of a LDL particle and a covalently bound apo(a), we assumed that a pool of LDL particles contained LDL particles with and without apo(a) tail. 
+At baseline, we identified that on average 40%-50% of large, medium and small LDL particles had apo(a) tail. 
+After evolocumab treatment, we identified that the proportion of LDL with apo(a) in all three pools of LDL particles increased to about 70%-75%. 
+The composition shifting to relatively more LDL particles with apo(a) indicated that the reduction of LDL particles may mainly correspond to the reduction of LDL particles without apo(a). 
+Indeed Lp(a) needs to compete with LDL particles for binding to the LDL receptor, and is preferred for uptake by the LDL receptor when the LDL particle concentration is low [@Raal2016].  
+We hypothesized that the LDL particles with and without apo(a) tail may have different affinity for binding to the LDL receptor. 
+Besides LDL receptor, we acknowledge that VLDL receptor can also mediate Lp(a) catabolism [@Argraves1997]. 
+In our analysis, we observed substantial reduction in VLDL particle concentrations after treatment of evolocumab. 
+Since PCSK9 can induce the degradation of LDL receptor as well as VLDL receptor, evolocumab treatment must enhance activity of both receptors [@Poirier2008]. 
+Interestingly, we observed that most of patients receiving evolocumab ended in very low concentration (below the detection limit) of extremely large and very large VLDL particles, suggesting enhancement of VLDL receptor activity. 
+
+## Strengths and limitations
+
+Strengths and limitations of our study warrant consideration. 
+Our study provided first insight into relationship between Lp(a) concentrations and NMR LDL particle concentrations. 
+One limitation of our study is that due to small sample size, our uncertainty of LDL particle composition estimation is large. 
+
+# Authors
+
+# Acknowledgements
+
+# Sources of Funding
+
+# Disclosures
+
+# Affiliations
+
+# References
+
