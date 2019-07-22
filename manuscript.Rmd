@@ -16,7 +16,7 @@ Albert K. Groen, PhD$^1$
 # Abstract
 
 Background: 
-Epidemiological studies show that subjects with elevated lipoprotein(a) [Lp(a)] have higher risk for developing cardiovascular diseases. 
+Epidemiological studies show that subjects with elevated lipoprotein(a) [Lp(a)] have a higher risk for developing cardiovascular diseases. 
 Inhibition of proprotein convertase subtilisin/kexin type 9 (PCSK9) is one of the limited options to reduce Lp(a). 
 In this study, we aimed to investigate the effects of PCSK9 inhibition with evolocumab on lipoprotein metabolism in subjects with elevated Lp(a).
 
@@ -37,14 +37,15 @@ Evolocumab-induced reduction of LDL particles may mainly correspond to the reduc
 
 Lipoprotein(a) [Lp(a)] is an independent risk factor for cardiovascular diseases, and often considered as a low-density lipoprotein (LDL)-like particle with an apolipoprotein(a) [apo(a)] tail produced by *LPA*. 
 Unlike LDL-cholesterol lowering, limited therapeutic options are available to reduce plasma Lp(a) concentration. 
-Proprotein convertase subtilisin/kexin type 9 (PCSK9) monoclonal antibody such as evolocumab has been shown to lower Lp(a) [@Raal2014; @Watts2017; @Shapiro2019].  
+Proprotein convertase subtilisin/kexin type 9 (PCSK9) monoclonal antibody such as evolocumab has been shown to lower Lp(a) [@Raal2014; @Watts2017; @Shapiro2019].
+PCSK9 binds to hepatic low density lipoprotein (LDL) receptors and mediates their degradation in lysosome.
 Evolocumab (also called AMG 145) is a fully human monoclonal antibody that targets PCSK9 and prevents it from binding to the LDL receptor. 
 Although evolocumab-induced Lp(a) reduction was linked to enhanced LDL receptor mediated uptake and attenuated Lp(a) production, the mechanism of Lp(a) lowering by PCSK9 inhibition is unknown [@Romagnuolo2015; @Raal2016; @Watts2018]. 
-In the current study, we aim to study the effects of PCSK9 inhibition with evolocumab on lipoprotein metabolism in subjects with elevated Lp(a). 
-We decided to focus on lipoprotein metabolism, because genetic inhibition of PCSK9 and statin therapy were found to have similar metabolic effects, but differ in very-low-density lipoprotein (VLDL) metabolism [@Sliz2018]. 
-So far, effects of PCSK9 inhibition with monoclonal antibody on lipoprotein metabolism were only assessed in healthy volunteers [@Reyes-Soffer2017]. 
-The next step is to investigate the metabolic effects of PCSK9 inhibition on lipoprotein metabolism in subjects with high risk for cardiovascular diseases. 
-To this end, we performed metabolic profiling of plasma samples derived from 30 individuals (placebo 14; evolocumab 16) with elevated Lp(a). 
+As shown in a recent meta-analysis, useage of statins leads to increasing of Lp(a) concentration [@Tsimikas2019]. 
+More interestingly, decreasing Lp(a) concentration was seen in homozygous familial hypercholesterolaemia (FH) patients after treatment of evolocumab [@Raal2015]. 
+These observations suggested existence of non-LDL receptor mediated catabolism of Lp(a). 
+In the current study, we aim to explore the alternative pathways beyond LDL receptor-mediated catabolism of Lp(a).
+To this end, we studied the metabolic effects of PCSK9 inhibition with evolocumab in 30 subjects (placebo 14; evolocumab 16) with elevated Lp(a). 
 We identified that despite evolocumab treatment for 16 weeks resulted in 18.9% reduction of Lp(a), coupled with substantial reduction of VLDL, IDL and LDL particles.   
 Our further analysis revealed that evolocumab treatment not only reduced LDL particle concentrations, but also changed the distribution between LDL particles with and without apo(a). 
 
@@ -56,7 +57,7 @@ This was a site-specific sub study of the ANITSCHKOW trial (NCT02729025) conduct
 The ANITSCHKOW trial was a phase 3b, multicenter, randomized, double-blind, placebo-controlled trial using subcutaneous injections of evolocumab 420mg Q4W for 16 weeks as investigational product [@Stiekema2018].
 The study was conducted in accordance to the principles of the Declaration of Helsinki and the study protocol was approved by the ethic committee of the Amsterdam UMC. 
 
-Patients were found to be eligible for enrollment in the ANITSCHKOW trial when they were ≥ 50 years of age, had a fasting LDL-C of ≥ 2.6 mmol/L (100mg/dL), and an Lp(a) of ≥ 125nmol/L (50mg/dL). 
+Patients were found to be eligible for enrollment in the ANITSCHKOW trial when they were $\geq$ 50 years of age, had a fasting LDL-C of $\geq$ 2.6 mmol/L (100mg/dL), and an Lp(a) of $\geq$ 125nmol/L (50mg/dL). 
 At time of randomization, study subjects who were on lipid lowering treatment had to be on a stable dosing regimen for at least 8 weeks. 
 Exclusion criteria were among others, diabetes mellitus and a cardiovascular event within three months prior to randomization. 
 The complete list of eligibility criteria was reported previously [@Stiekema2018].
@@ -64,7 +65,7 @@ The complete list of eligibility criteria was reported previously [@Stiekema2018
 ## Biochemical measurements
 
 Blood samples were obtained at time of randomization and sixteen weeks after treatment. 
-Patients were fasting for ≥ 9 hours for both blood withdrawals. 
+Patients were fasting for $\geq$ 9 hours for both blood withdrawals. 
 Lipoprotein(a) levels were measured using an isoform-independent immunoturbidometric assay (Polymedco, Cortlandt Manor, NY, USA) and reported in nmol/L. 
 
 ## Metabolite quantification
