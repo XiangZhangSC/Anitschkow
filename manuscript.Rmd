@@ -5,13 +5,14 @@ bibliography: /home/xiang/Documents/Bibliography/lpa.bib
 csl: circulation.csl
 ---
 
-Xiang Zhang, PhD$^1$,
+Xiang Zhang, PhD$^1,^2$,
 Lotte C.A. Stiekema, MD$^2$,
 Erik S.G. Stroes, PhD$^2$,
 Albert K. Groen, PhD$^1$
 
 1. Department of Experimental Vascular Medicine, Amsterdam University Medical Center, University of Amsterdam, Meibergdreef 9, 1105 AZ Amsterdam, The Netherlands
-2. Department of Vascular Medicine, Amsterdam University Medical Center, University of Amsterdam, Meibergdreef 9, 1105 AZ Amsterdam, The Netherlands
+2. Human and Animal Physiology, Wageningen University, De Elst 1, 6708 WD Wageningen, The Netherlands
+3. Department of Vascular Medicine, Amsterdam University Medical Center, University of Amsterdam, Meibergdreef 9, 1105 AZ Amsterdam, The Netherlands
 
 # Abstract
 
