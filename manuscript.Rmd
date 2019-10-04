@@ -122,7 +122,7 @@ Baseline characteristics of the two groups were comparable and provided in Table
 
 Evolocumab treatment for 16 weeks resulted in mean 18.9% (95% credible interval: 7.51% to 29.2%) reduction in Lp(a) compared with placebo (Figure 1). 
 
-![Figure 1 Evolocumab treatment for 16 weeks resulted in mean (95% credible interval) reduction in Lp(a) compared to placebo group: 24.5% (14.0% to 35.5%)](./Treatment_effect_lpa.png)
+![Figure 1 Evolocumab treatment for 16 weeks resulted in mean (95% credible interval) reduction in Lp(a) compared to placebo group: 18.9% (7.51% to 29.2%)](./Treatment_effect_lpa.png)
 
 To identify the corresponding effects of evolocumab on lipoprotein metabolism, we focused on the 14 lipoprotein subclasses. 
 We observed that evolocumab treatment resulted in substantial reduction in particle concentration of extremely large (-2.09 [-4.25 -0.284]), very large (-2.87 [-5.53 -0.488]), large (-0.973 [-1.69, -0.350]), medium (-0.702 [-0.979, -0.413]), small (-0.492 [-0.610 -0.367]) and very small VLDL (-0.640 [-0.770 -0.515]) compared with placebo.
@@ -135,16 +135,13 @@ In contrast to VLDL and LDL particles, we observed that evolocumab treatment res
 
 Lp(a) is thought to be comprised of a LDL particle and a covalently bound apo(a). 
 In the Nightingale metabolomics platform, three LDL particles, including large, medium and small LDL, were profiled. 
-At baseline, we identified that on average 43.9% (95% credible interval [0.0102%, 89.3%]) large LDL, 40.9% ([0.00807%, 88.6%]) medium LDL particles and 50.5% ([5.39% 97.3%]) small LDL particles were with apo(a) (Figure 3). 
-The correlations of LDL-apo(a) proportion between these three LDL particles were -0.4 (large and medium LDL), -0.62 (large and small LDL) and -0.42 (medium and small LDL). 
+At baseline, we identified that on average 56% (95% credible interval [9%, 100%]) large LDL, 50% ([3%, 97%]) medium LDL particles and 53% ([7% 99%]) small LDL particles were with apo(a) (Figure 3). 
 
-![Figure 3 Posterior mean of LDL-apo(a) proportion in large, medium and small LDL particles. Each dot (in total 4000 dots) is a mean proportion of LDL particles with apolipoprotein(a) sampled from the posterior distribtuions. The marginal distribution of the posterior mean was on the diagnal. The pearson correlation coefficients were shown](./Lpa_LDL_baseline.png)
+After treatment of evolocumab, on average 70% (28%, 100%) large LDL particles were with apo(a). 
+In the pool of medium LDL particles, on average 61% (11%, 99%) of them were with apo(a). 
+Regarding small LDL particles, on average 68% (24%, 100%) of them were with apo(a).
 
-After treatment of evolocumab, on average 76.5% (41.5%, 100%) large LDL particles were with apo(a). 
-In the pool of medium LDL particles, on average 69.2% (25.5%, 100%) of them were with apo(a). 
-Regarding small LDL particles, on average 75.8% (39.3%, 100%) of them were with apo(a).
-
-![Figure 4 Posterior mean of LDL-apo(a) proportion in large, medium and small LDL particles. Each dot (in total 4000 dots) is a mean proportion of LDL particles with apolipoprotein(a) sampled from the posterior distribtuions. The marginal distribution of the posterior mean was on the diagnal. The pearson correlation coefficients were shown](./Lpa_LDL_visit2.png)
+![Figure 3 Proportions of particles with and without apo(a) in large, medium and small LDL pools. The sizes of pie charts were scaled to the average particle concentrations.](./Lpa_LDL_composition.png)
 
 # Discussion
 
