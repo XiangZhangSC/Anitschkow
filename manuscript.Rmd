@@ -42,7 +42,7 @@ Proprotein convertase subtilisin/kexin type 9 (PCSK9) monoclonal antibody such a
 PCSK9 binds to hepatic low density lipoprotein (LDL) receptors and mediates their degradation in lysosome.
 Evolocumab (also called AMG 145) is a fully human monoclonal antibody that targets PCSK9 and prevents it from binding to the LDL receptor. 
 Although evolocumab-induced Lp(a) reduction was linked to enhanced LDL receptor mediated uptake and attenuated Lp(a) production, the mechanism of Lp(a) lowering by PCSK9 inhibition is unknown [@Romagnuolo2015; @Raal2016; @Watts2018]. 
-As shown in a recent meta-analysis, useage of statins leads to increasing of Lp(a) concentration [@Tsimikas2019]. 
+As shown in a recent meta-analysis, usage of statins leads to increasing of Lp(a) concentration [@Tsimikas2019]. 
 More interestingly, decreasing Lp(a) concentration was seen in homozygous familial hypercholesterolaemia (FH) patients after treatment of evolocumab [@Raal2015]. 
 These observations suggested existence of non-LDL receptor mediated catabolism of Lp(a). 
 In the current study, we aim to explore the alternative pathways beyond LDL receptor-mediated catabolism of Lp(a).
@@ -151,9 +151,9 @@ Our observation is consistent with the previous study, in which evolocumab treat
 The next question we came up with is "why we observed large effect of evolocumab on VLDL, IDL and LDL particle concentrations but relatively small effect on Lp(a)?" 
 To address the question, we analyzed the composition of LDL particles. 
 Because Lp(a) is often thought to be comprised of a LDL particle and a covalently bound apo(a), we assumed that a pool of LDL particles contained LDL particles with and without apo(a) tail. 
-At baseline, we identified that on average 40%-50% of large, medium and small LDL particles had apo(a) tail. 
-After evolocumab treatment, we identified that the proportion of LDL with apo(a) in all three pools of LDL particles increased to about 70%-75%. 
-The composition shifting to relatively more LDL particles with apo(a) indicated that the reduction of LDL particles may mainly correspond to the reduction of LDL particles without apo(a). 
+At baseline, we identified that on average about 50% of large, medium and small LDL particles had apo(a) tail. 
+Evolocumab treatment not only decreased concentrations of LDL particles, but also resulted in 10-20% increasing in LDL particles with apo(a). 
+The composition shifting to relatively more LDL particles with apo(a) indicated that LDL particles with apo(a) were less preferably cleared from the circulation compared to their counterparts without apo(a). 
 Indeed Lp(a) needs to compete with LDL particles for binding to the LDL receptor, and is preferred for uptake by the LDL receptor when the LDL particle concentration is low [@Raal2016].  
 We hypothesized that the LDL particles with and without apo(a) tail may have different affinity for binding to the LDL receptor. 
 Besides LDL receptor, we acknowledge that VLDL receptor can also mediate Lp(a) catabolism [@Argraves1997]. 
