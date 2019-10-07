@@ -19,20 +19,19 @@ Albert K. Groen, PhD$^1$
 Background: 
 Epidemiological studies show that subjects with elevated lipoprotein(a) [Lp(a)] have a higher risk for developing cardiovascular diseases. 
 Inhibition of proprotein convertase subtilisin/kexin type 9 (PCSK9) is one of the limited options to reduce Lp(a). 
-In this study, we aimed to investigate the effects of PCSK9 inhibition with evolocumab on lipoprotein metabolism in subjects with elevated Lp(a).
+In this study, we aimed to investigate metabolic effects of PCSK9 inhibition with evolocumab in subjects with elevated Lp(a).
 
 Methods:
 We performed metabolic profiling of plasma samples derived from 30 individuals (placebo N = 14; evolocumab N = 16). 
-By applying Bayesian lognormal regression, we assessed the effects of evolocumab treatment on circulating Lp(a) as well as 14 lipoprotein subclasses. 
-Our further regression analysis revealed the distribution of LDL particles with and without apolipoprotein(a) [apo(a)] before and after evolocumab treatment.
+By applying Bayesian lognormal regression, we assessed the effects of evolocumab treatment on circulating metabolites such as lipoproteins and amino acids. 
+Further hierarchical modeling, we also studied effects of evolocumab treatment on proportions of LDL particles with and without apolipoprotein(a) [apo(a)]. 
 
 Results:
 We identified that evolocumab treatment for 16 weeks resulted in 18.9% reduction of circulating Lp(a), coupled with substantial reduction of VLDL, IDL and LDL particles. 
-Moreover, we identified that evolocumab treatment not only reduced LDL particle concentrations, but also the distributions between LDL particles with and without apo(a). 
+Moreover, we observed that evolocumab treatment tended to increase the proportion of LDL particles with apo(a). 
 
 Conclusions:
-Based on our analysis, we suggest that the LDL particles with and without apo(a) tail may have different affinity for binding to the LDL receptor. 
-Evolocumab-induced reduction of LDL particles may mainly correspond to the reduction of LDL particles without apo(a).
+Based on our analysis, we showed that evolocumab treatment had large effects on lipoprotein metabolism.
 
 # Introduction
 
