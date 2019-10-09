@@ -35,19 +35,23 @@ Based on our analysis, we showed that evolocumab treatment had large effects on 
 
 # Introduction
 
-Lipoprotein(a) [Lp(a)] is an independent risk factor for cardiovascular diseases, and often considered as a low-density lipoprotein (LDL)-like particle with an apolipoprotein(a) [apo(a)] tail produced by *LPA*. 
-Unlike LDL-cholesterol lowering, limited therapeutic options are available to reduce plasma Lp(a) concentration. 
-Proprotein convertase subtilisin/kexin type 9 (PCSK9) monoclonal antibody such as evolocumab has been shown to lower Lp(a) [@Raal2014; @Watts2017; @Shapiro2019].
-PCSK9 binds to hepatic low density lipoprotein (LDL) receptors and mediates their degradation in lysosome.
-Evolocumab (also called AMG 145) is a fully human monoclonal antibody that targets PCSK9 and prevents it from binding to the LDL receptor. 
-Although evolocumab-induced Lp(a) reduction was linked to enhanced LDL receptor mediated uptake and attenuated Lp(a) production, the mechanism of Lp(a) lowering by PCSK9 inhibition is unknown [@Romagnuolo2015; @Raal2016; @Watts2018]. 
-As shown in a recent meta-analysis, usage of statins leads to increasing of Lp(a) concentration [@Tsimikas2019]. 
-More interestingly, decreasing Lp(a) concentration was seen in homozygous familial hypercholesterolaemia (FH) patients after treatment of evolocumab [@Raal2015]. 
-These observations suggested existence of non-LDL receptor mediated catabolism of Lp(a). 
-In the current study, we aim to explore the alternative pathways beyond LDL receptor-mediated catabolism of Lp(a).
-To this end, we studied the metabolic effects of PCSK9 inhibition with evolocumab in 30 subjects (placebo 14; evolocumab 16) with elevated Lp(a). 
-We identified that despite evolocumab treatment for 16 weeks resulted in 18.9% reduction of Lp(a), coupled with substantial reduction of VLDL, IDL and LDL particles.   
-Our further analysis revealed that evolocumab treatment not only reduced LDL particle concentrations, but also changed the distribution between LDL particles with and without apo(a). 
+lipoprotein(a) [Lp(a)], synthesized in liver, is a low-density lipoprotein (LDL)-like particle with an apolipoprotein(a) [apo(a)] tail. 
+Similar to other lipoproteins, Lp(a) is cleared from the circulation primarily by the liver [@Cain2005]. 
+Epidemiological studies showed that subjects with elevated Lp(a) had increasing risk of developing cardiovascular disease [@ODonoghue2019]. 
+Unlike LDL-cholesterol lowering, limited therapeutic options are available to reduce plasma Lp(a) concentration [@VanCapelleveen2016]. 
+One of the agents that are capable to lower circulating Lp(a) levels is proprotein convertase subtilisin/kexin type 9 (PCSK9) monoclonal antibody, which prevents extracellular PCSK9 from binding to the LDL receptor, and results in supraphysiological abundance of LDL receptors [@Raal2014; @Raal2016].
+The excess number of LDL receptors on the surface of hepatocytes were hypothesized to be responsible for the enhanced Lp(a) catabolism [@Romagnuolo2015; @Raal2016]. 
+However, the above hypothesis does not concur with the effect of statins therapy, which significantly increases hepatic LDL receptor abundances but also increases plasma Lp(a) levels [@Tsimikas2019]. 
+The same hypothesis was also challenged by the observation that LDL receptor knock out mice had similar Lp(a) catabolism as the wild type mice [@Cain2005]. 
+Therefore, what roles LDL-receptor plays in Lp(a) catabolism has not been elucidated and remains a matter of debate [@Reyes-Soffer2017; @Watts2018; @Stoekenbroek2018]. 
+In addition to the LDL receptor, very low density lipoprotein (VLDL) receptor and scavenger receptor class B type I (SR-BI) were also found to act as potential receptor for Lp(a), indicating more than one pathway is likely to be involved in Lp(a) reduction by PCKS9 inhibition [@Argraves1997; @Yang2013].
+As a cost-effective approach, nuclear magnetic resonance (NMR) metabolomics simultaneously quantifies hundreds of circulating biomarkers and provides insights on multiple pathways [@Soininen2009].
+In fact, NMR metabolomics has been used to study metabolic effects that were associated with  *LPA* loci, as well as genetic inhibition of PCSK9 [@Kettunen2016; @Sliz2018]. 
+However, genetic inhibition of PCSK9 is different from inhibition with monoclonal antibody, and there is lack of studies on metabolic effects of PCSK9 inhibition with monoclonal antibody. 
+In the current study, we aim to study metabolic changes corresponding to Lp(a) reduction in subjects with elevated Lp(a) after treatment of PCSK9 monoclonal antibody (evolocumab).
+To this end, we performed NMR metabolomics of plasma samples derived from 30 healthy participants with elevated Lp(a) levels (placebo 14; evolocumab 16). 
+Since Lp(a) and LDL significantly overlap in density, protein and lipid composition, LDL measurements made by current technologies contain the content of Lp(a) [@Yeang2015]. 
+To address this issue, in this study we developed a statistical model to distinguish these two lipoproteins. 
 
 # Methods
 
