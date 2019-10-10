@@ -1,5 +1,5 @@
 ---
-title: "Effects of PCSK9 Inhibition With Evolocumab on Lipoprotein Metabolism in subjects with elevated Lp(a)"
+title: "Metabolic Effects of PCSK9 Inhibition With Evolocumab in subjects with elevated Lp(a)"
 output: word_document
 bibliography: /home/xiang/Documents/Bibliography/lpa.bib
 csl: circulation.csl
@@ -24,14 +24,15 @@ In this study, we aimed to investigate metabolic effects of PCSK9 inhibition wit
 Methods:
 We performed metabolic profiling of plasma samples derived from 30 individuals (placebo N = 14; evolocumab N = 16). 
 By applying Bayesian lognormal regression, we assessed the effects of evolocumab treatment on circulating metabolites such as lipoproteins and amino acids. 
-Further hierarchical modeling, we also studied effects of evolocumab treatment on proportions of LDL particles with and without apolipoprotein(a) [apo(a)]. 
+In order to separate Lp(a) content from the LDL measurements, we developed a statistical model which can be used to estimate the proportions of LDL particles with and without apolipoprotein(a) [apo(a)]. 
 
 Results:
-We identified that evolocumab treatment for 16 weeks resulted in 18.9% reduction of circulating Lp(a), coupled with substantial reduction of VLDL, IDL and LDL particles. 
+We identified that evolocumab treatment for 16 weeks resulted in 18.9% reduction of circulating Lp(a), coupled with substantial reduction of VLDL, IDL and LDL particles as well as their lipid contents.  
 Moreover, we observed that evolocumab treatment tended to increase the proportion of LDL particles with apo(a). 
 
 Conclusions:
-Based on our analysis, we showed that evolocumab treatment had large effects on lipoprotein metabolism.
+Our analysis suggested that alternative pathways beyond LDL receptor mediated clearance may be involved in Lp(a) reduction by PCSK9 inhibition.
+Moreover, LDL with and without apo(a) tended to have different preference to be cleared from the circulation. 
 
 # Introduction
 
