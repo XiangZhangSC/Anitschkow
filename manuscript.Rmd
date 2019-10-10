@@ -139,30 +139,39 @@ Regarding $\theta_L$, $\theta_M$ and $\theta_S$, we set the beta distribution $B
 The current study included 30 patients (evolocumab, n = 16; placebo, n = 14). 
 Baseline characteristics of the two groups were comparable and provided in Table 1. 
 
-## Effects on lipoprotein particles
+## Metabolic effects of PCSK9 inhibition with evolocumab
 
-Evolocumab treatment for 16 weeks resulted in mean 18.9% (95% credible interval: 7.51% to 29.2%) reduction in Lp(a) compared with placebo (Figure 1). 
+Evolocumab treatment for 16 weeks resulted in mean 18.9% (95% credible interval: 7.51% to 29.2%) reduction in Lp(a) compared with placebo. 
 
-![Figure 1 Evolocumab treatment for 16 weeks resulted in mean (95% credible interval) reduction in Lp(a) compared to placebo group: 18.9% (7.51% to 29.2%)](./Treatment_effect_lpa.png)
+To identify the metabolic effects corresponding to the Lp(a) reduction by PCSK9 inhibition, we performed NMR metabolomics covering metabolic pathways such as lipoproteins, fatty acids, amino acids and glycolysis. 
+We observed that evolocumab treatment resulted in substantial reduction in particle concentration of extremely large (81% [51% 100%]), very large (89% [69% 100%]), large (61% [36%, 86%]), medium (50% [36%, 63%]), small (39% [31% 46%]) and very small VLDL (47% [41% 54%]) compared with the placebo group.
+We also observed that evolocumab treatment resulted in particle concentration reduction in IDL (53% [45%, 61%]), large (57% [49% 66%]), medium (59% [50%, 6%]) and small LDL (55% [47%, 64%]) compared with the placebo group. 
+In addition, we observed that evolocumab treatment resulted in decreased concentrations of very large HDL particles (25% [4% 46%]), and increased concentrations of medium HDL particles (13% [4% 23%]) (Figure 1).
 
-To identify the corresponding effects of evolocumab on lipoprotein metabolism, we focused on the 14 lipoprotein subclasses. 
-We observed that evolocumab treatment resulted in substantial reduction in particle concentration of extremely large (-2.09 [-4.25 -0.284]), very large (-2.87 [-5.53 -0.488]), large (-0.973 [-1.69, -0.350]), medium (-0.702 [-0.979, -0.413]), small (-0.492 [-0.610 -0.367]) and very small VLDL (-0.640 [-0.770 -0.515]) compared with placebo.
-We also observed that compared with placebo evolocumab treatment resulted in particle concentration reduction in IDL (-0.765 [-0.930, -0.587]), large (-0.842 [-1.05 -0.657]), medium (-0.901 [-1.12, -0.698]) and small LDL (-0.810 [-1.00, -0.610]). 
-In contrast to VLDL and LDL particles, we observed that evolocumab treatment resulted in increasing concentrations of medium HDL particle (0.119 [0.0366, 0.200]) (Figure 2).
+![Figure 1 Mean difference between evolocumab and palacebo group, adjusting for pre-treatment lipoprotein particle concentrations. Circles represent the posterior means. Lines refer to the 95% credible intervals](./Treatment_effect_lipoproteins.png)
 
-![Figure 2 Mean difference between evolocumab and palacebo group, adjusting for pre-treatment lipoprotein particle concentrations. Circles represent the posterior means. Lines refer to the 95% credible intervals](./Treatment_effect_lipoproteins.png)
+Similar to the lipoprotein particle concentration profiles, we observed that evolocumab treatment resulted in substantial reduction of esterified cholesterol (CE), triglyceride (TG), free cholesterol (FC) and phospholipid (PL) in VLDL, IDL and LDL as well as very large HDL, compared with the placebo group (Figure 2). 
 
-## Effects on LDL particle compositions
+![Figure 2 Mean difference in lipoprotein lipid compositions between evolocumab and placebo group, adjusting for pre-treatment lipoprotein lipid concentrations. Circles represent the posterior means. Lines refer to the 95% credible intervals. CE: esterified cholesterol; FC: free cholesterol; PL: phospholipids; TG: triglyceride.](./Treatment_effect_lipoprotein_lipid.png)
+
+
+The NMR metabolomics also quantified the fatty acid content in the lipoproteins. 
+We observed that treatment of evolocumab resulted in 30% [24% 36%] reduction in total fatty acids, with the largest effect on docosahexaenoic acid (DHA 40% [24% 55%]) (Figure 3).
+
+![Figure 2 Mean difference in fatty acid concentrations between evolocumab and placebo group, adjusting for pre-treatment fatty acid concentrations. Circles represent the posterior means. Lines refer to the 95% credible intervals.](./Treatment_effect_FFAs.png)
+
+We observed no difference in concentrations of other metabolites covering amino acids, fluid balance, glycolysis and ketone bodies. 
+
+## Separating Lp(a) content from the LDL measures
 
 Lp(a) is thought to be comprised of a LDL particle and a covalently bound apo(a). 
-In the Nightingale metabolomics platform, three LDL particles, including large, medium and small LDL, were profiled. 
-At baseline, we identified that on average 56% (95% credible interval [9%, 100%]) large LDL, 50% ([3%, 97%]) medium LDL particles and 53% ([7% 99%]) small LDL particles were with apo(a) (Figure 3). 
+Because Lp(a) and LDL significantly overlap in density, as well as protein and lipid composition, LDL measures contain the content of Lp(a). 
+At baseline, we identified that on average 58% ([8%, 100%]) large LDL, 49% ([0.2%, 95%]) medium LDL particles and 55% ([7% 100%]) small LDL particles were with apo(a) (Figure 5). 
 
-After treatment of evolocumab, on average 70% (28%, 100%) large LDL particles were with apo(a). 
-In the pool of medium LDL particles, on average 61% (11%, 99%) of them were with apo(a). 
-Regarding small LDL particles, on average 68% (24%, 100%) of them were with apo(a).
+Sixteen weeks after treatment of evolocumab, on average 74% (28%, 100%) large LDL particles were with apo(a).  
+The average proportions of particles with apo(a) in the pool of medium and small LDL were 65% (12%, 100%) and 72% (24%, 100%), respectively (Figure 5).
 
-![Figure 3 Proportions of particles with and without apo(a) in large, medium and small LDL pools. The sizes of pie charts were scaled to the average particle concentrations.](./Lpa_LDL_composition.png)
+![Figure 5 Proportions of particles with and without apo(a) in large, medium and small LDL pools. The sizes of pie charts were scaled to the average particle concentrations.](./Lpa_LDL_composition.png)
 
 # Discussion
 
