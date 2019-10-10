@@ -27,7 +27,7 @@ By applying Bayesian lognormal regression, we assessed the effects of evolocumab
 In order to separate Lp(a) content from the LDL measurements, we developed a statistical model which can be used to estimate the proportions of LDL particles with and without apolipoprotein(a) [apo(a)]. 
 
 Results:
-We identified that evolocumab treatment for 16 weeks resulted in 18.9% reduction of circulating Lp(a), coupled with substantial reduction of VLDL, IDL and LDL particles as well as their lipid contents.  
+We identified that evolocumab treatment for 16 weeks resulted in 17% (95% credible interval: 8% to 26%) reduction of circulating Lp(a), coupled with substantial reduction of VLDL, IDL and LDL particles as well as their lipid contents.  
 Moreover, we observed that evolocumab treatment tended to increase the proportion of LDL particles with apo(a). 
 
 Conclusions:
@@ -180,7 +180,7 @@ The major finding of this work is that evolocumab treatment in patients with hig
 In the current work, evolocumab treatment resulted in on average 17% reduction in plasma Lp(a) concentration compared with placebo. 
 Our detailed metabolomic profiling revealed that Lp(a) reduction by PCSK9 inhibition corresponded to substantial reduction in concentrations of VLDL, IDL and LDL particles as well as their lipid and fatty acid contents. 
 Our observation is consistent with the previous study, in which evolocumab treatment not only reduced concentrations of LDL particles, but also substantially reduced triglyceride-rich lipoprotein particles [@Toth2018]. 
-Since a PCSK9 monoclonal antibody such as evolocumab reduces the degradation of the LDL receptor as well as the LDL receptor, the very low concentration of VLDL particles after the treatment may be ascribed to the increased umber of VLDL receptors [@Poirier2008]. 
+Since a PCSK9 monoclonal antibody such as evolocumab reduces the degradation of the LDL receptor as well as the VLDL receptor, the very low concentration of VLDL particles after the treatment may be ascribed to the increased number of VLDL receptors [@Poirier2008]. 
 The upregulation of VLDL receptors can enhance uptake of VLDLs but also Lp(a) from the circulation [@Argraves1997]. 
 In addition, our analysis also showed that treatment of evolocumab lowered concentrations of very large HDL particles. 
 Very large HDL is cholesterol enriched and mainly captured by the SR-B1 present in the liver [@Acton1996]. 
