@@ -159,7 +159,7 @@ Similar to the lipoprotein particle concentration profiles, we observed that evo
 The NMR metabolomics also quantified the fatty acid content in the lipoproteins. 
 We observed that treatment of evolocumab resulted in 30% [24% 36%] reduction in total fatty acids, with the largest effect on docosahexaenoic acid (DHA 40% [24% 55%]) (Figure 3).
 
-![Figure 2 Mean difference in fatty acid concentrations between evolocumab and placebo group, adjusting for pre-treatment fatty acid concentrations. Circles represent the posterior means. Lines refer to the 95% credible intervals.](./Treatment_effect_FFAs.png)
+![Figure 3 Mean difference in fatty acid concentrations between evolocumab and placebo group, adjusting for pre-treatment fatty acid concentrations. Circles represent the posterior means. Lines refer to the 95% credible intervals.](./Treatment_effect_FFAs.png)
 
 We observed no difference in concentrations of other metabolites covering amino acids, fluid balance, glycolysis and ketone bodies. 
 
@@ -167,12 +167,12 @@ We observed no difference in concentrations of other metabolites covering amino 
 
 Lp(a) is thought to be comprised of a LDL particle and a covalently bound apo(a). 
 Because Lp(a) and LDL significantly overlap in density, as well as protein and lipid composition, LDL measures contain the content of Lp(a). 
-At baseline, we identified that on average 58% ([8%, 100%]) large LDL, 49% ([0.2%, 95%]) medium LDL particles and 55% ([7% 100%]) small LDL particles were with apo(a) (Figure 5). 
+At baseline, we identified that on average 58% ([8%, 100%]) large LDL, 49% ([0.2%, 95%]) medium LDL particles and 55% ([7% 100%]) small LDL particles were with apo(a) (Figure 4). 
 
 Sixteen weeks after treatment of evolocumab, on average 74% (28%, 100%) large LDL particles were with apo(a).  
-The average proportions of particles with apo(a) in the pool of medium and small LDL were 65% (12%, 100%) and 72% (24%, 100%), respectively (Figure 5).
+The average proportions of particles with apo(a) in the pool of medium and small LDL were 65% (12%, 100%) and 72% (24%, 100%), respectively (Figure 4).
 
-![Figure 5 Proportions of particles with and without apo(a) in large, medium and small LDL pools. The sizes of pie charts were scaled to the average particle concentrations.](./Lpa_LDL_composition.png)
+![Figure 4 Proportions of particles with and without apo(a) in large, medium and small LDL pools. The sizes of pie charts were scaled to the average particle concentrations.](./Lpa_LDL_composition.png)
 
 # Discussion
 
