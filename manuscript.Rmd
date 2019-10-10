@@ -66,31 +66,33 @@ At time of randomization, study subjects who were on lipid lowering treatment ha
 Exclusion criteria were among others, diabetes mellitus and a cardiovascular event within three months prior to randomization. 
 The complete list of eligibility criteria was reported previously [@Stiekema2018].
 
-## Biochemical measurements
+## Metabolite quantification
 
 Blood samples were obtained at time of randomization and sixteen weeks after treatment. 
 Patients were fasting for $\geq$ 9 hours for both blood withdrawals. 
+
 Lipoprotein(a) levels were measured using an isoform-independent immunoturbidometric assay (Polymedco, Cortlandt Manor, NY, USA) and reported in nmol/L. 
 
-## Metabolite quantification
-
-Quantification of 14 lipoproteins was performed by using a high-throughput NMR metabolomics platform (Nightingale, Austria)
-The following 14 lipoprotein subclasses were quantified: 
+Quantification of 225 metabolic measures was performed by using a high-throughput NMR metabolomics platform (Nightingale health, Finland) [@Soininen2009]. 
+The 225 metabolic measures contain around 150 primary concentrations as well as ratios that were derived from the primary concentrations. 
+In this study, we focused on primary concentrations of circulating metabolites that cover multiple metabolic pathways including lipoproteins, fatty acids as well as amino acids and glycolysis intermediates. 
+The following 14 lipoprotein subclasses and their lipid compositions were quantified: 
 extremely large (average particle diameter >75 nm), 
 very large (average particle diameter 64.0 nm), large (53.6 nm), medium (44.5 nm), small (36.8 nm) and very small VLDL (31.3 nm); 
 intermediate density lipoprotein (IDL; 28.6 nm); 
 three LDL subclasses, i.e. large (25.5 nm), medium (23.0 nm) and small LDL (18.7 nm); 
 and four HDL subclasses, i.e. very large (14.3 nm), large (12.1 nm), medium (10.9 nm) and small HDL (8.7 nm).
+The complete list of the 225 metabolic measures can be found at  https://nightingalehealth.com/biomarkers
 
 ## Statistical analysis
 
-### Effects of evolocumab on Lp(a) and lipoprotein particles
+### Metabolic effects of PCSK9 inhibition with evolocumab
 
-The outcome variable ($y$) was concentration of Lp(a) or one of the 14 lipoprotein subclasses. 
-Two predictor variables were used: 1) evolocumab treatment (evolocumab, $T_i$ = 1; placebo $T_i = 0$); 2) baseline Lp(a) or lipoprotein particle concentration ($x$).
+To assess the effect of evolocumab on levels of a circulating metabolite, we ran lognormal regression analysis. 
+The outcome variable ($y$) was concentration of a metabolite. 
+Two predictor variables were in the regression model: 1) evolocumab treatment (evolocumab, $T_i$ = 1; placebo $T_i = 0$); 
+2) metabolite concentration at time of randomization ($x$).
 The baseline concentrations were centered and scaled so that the mean is 0 and standard deviation is 1.
-
-To assess metabolic effects of evolocumab treatment, we ran lognormal regression analysis. 
 The lognormal distribution was chosen to model the outcome variable because its values were positive continuous. 
 Due to missing observations in outcome variables, we applied the Bayesian approach to handle the missing data. 
 There are two types of missing values, which are as follows: 
@@ -104,17 +106,33 @@ We ran four Markov chains with 2000 iterations in each chain.
 Results were presented with the posterior mean of lognormal regression coefficient with 95% credible interval (CI). 
 The lognormal regression coefficient can be interpreted as the expected proportional change in the metabolite concentration.
 
-### Effects of evolocumab on composition of LDL particles
+### Separating Lp(a) content from LDL measures
 
-Because Lp(a) is often considered to comprise a LDL particle and covalently bound apo(a), we assumed that a pool of LDL particles is comprised by LDL particles with and without apo(a). 
-In the Nightingale platform, three kinds of LDL particles (large, medium and small VLDL) were profiled. 
-To identify the proportion of particles with apo(a) in each of these three pools, we ran Bayesian regression analysis. 
-The outcome variable ($y$) was concentration of Lp(a). 
-Three predictor variables were used: 1) Large LDL particle concentration $x_1$; 2) Medium LDL particle concentration ($x_2$); 3) Small LDL particle concentration ($x_3$). 
-We excluded the intercept from our regression model and used the beta distribution $Beta(1,1)$ as the prior distribution for the regression coefficients. 
-Because of the same motivation dealing with missing data, we applied the Bayesian approach. 
-As mentioned above, we fitted the model by running four Markov chains with 2000 iterations in each chain. 
-The regression coefficients are interpreted as proportion of LDL particles with apo(a) tail. 
+Since Lp(a) and LDL significantly overlap in density, as well as protein and lipid composition, LDL measures made by current technologies contain the content of Lp(a). 
+In this study, we developed a statistical model to address this issue. 
+Our statistical model was inspired by the biological relationship between Lp(a) and LDL. 
+Lp(a) is often considered to comprise a LDL particle and covalently bound apo(a). 
+Based on the above knowledge, we assumed that a pool of LDL particles is comprised by LDL particles with and without apo(a). 
+The outcome variable ($y$) was the particle concentration of Lp(a), which was measured by using the isoform-independent immunoturbidometric assay. 
+Again we used the lognormal distribution as likelihood function for the Lp(a) concentration. 
+Four predictor variables were used: 
+1) Large LDL particle concentration $\mathsf{LLDL}$; 
+2) Medium LDL particle concentration ($\mathsf{MLDL}$);
+3) Small LDL particle concentration ($\mathsf{SLDL}$);
+4) Whether the measurement is made at time of randomization or sixteen weeks after treatment (16 weeks after, $V = 1$).  
+These particle concentrations were measured by using the NMR metabolomics. 
+Because lipid-lowering medication such as statins, ezetimibe as well as evolocumab has causal effects on these LDL particle concentrations, we included three covariates (statin usage: $S = 1$; Ezetimibe usage $E = 1$; Evolocumab usage $P = 1$). 
+The mathematical details of the model was given below:
+$$\mathsf{Lp_a}[i] \sim Lognormal(\mu[i],\sigma)$$
+$$exp(\mu[i]) = \theta_L \times exp(\mu_{LLDL}[i]) + \theta_M \times exp(\mu_{MLDL}[i]) + \theta_S \times exp(\mu_{SLDL}[i])$$
+$$LLDL[i] \sim Lognormal(\mu_{LLDL[i]}, \sigma_{L})$$
+$$MLDL[i] \sim Lognormal(\mu_{MLDL[i]}, \sigma_{M})$$
+$$SLDL[i] \sim Lognormal(\mu_{SLDL[i]}, \sigma_{S})$$
+$$exp(\mu_{LLDL}[i]) = exp(\alpha_L) + \beta_{S,L} \times S[i] + \beta_{E,L} \times E[i] + (\beta_L + \beta_{P,L} \times P[i]) \times V[i]$$
+$$exp(\mu_{MLDL}[i]) = exp(\alpha_M) + \beta_{S,M} \times S[i] + \beta_{E,M} \times E[i] + (\beta_M + \beta_{P,M} \times P[i]) \times V[i]$$
+$$exp(\mu_{SLDL}[i]) = exp(\alpha_S) + \beta_{S,S} \times S[i] + \beta_{E,S} \times E[i] + (\beta_S + \beta_{P,S} \times P[i]) \times V[i]$$
+
+Regarding $\theta_L$, $\theta_M$ and $\theta_S$, we set the beta distribution $Beta(1,1)$ as their prior distributions, since these regression coefficients are interpreted as proportion of LDL particles with apo(a) tail. 
 
 # Results
 
