@@ -24,15 +24,15 @@ In this study, we aimed to investigate metabolic effects of PCSK9 inhibition wit
 Methods:
 We performed metabolic profiling of plasma samples derived from 30 individuals (placebo N = 14; evolocumab N = 16). 
 By applying Bayesian lognormal regression, we assessed the effects of evolocumab treatment on circulating metabolites such as lipoproteins and amino acids. 
-In order to separate Lp(a) content from the LDL measurements, we developed a statistical model which can be used to estimate the proportions of LDL particles with and without apolipoprotein(a) [apo(a)]. 
+In order to separate Lp(a) content from the LDL measurements, we applied a Gaussian mixture model to estimate the proportions of LDL particles with and without apolipoprotein(a) [apo(a)]. 
 
 Results:
 We identified that evolocumab treatment for 16 weeks resulted in 17% (95% credible interval: 8% to 26%) reduction of circulating Lp(a), coupled with substantial reduction of VLDL, IDL and LDL particles as well as their lipid contents.  
-Moreover, we observed that evolocumab treatment tended to increase the proportion of LDL particles with apo(a). 
+We also identified that about 24% [0.2% 47%] of large LDL particles were with apo(a). 
+We did not observe changes in the proportion of LDL particles with apo(a) after treatment of evolocumab. 
 
 Conclusions:
 Our analysis suggested that alternative pathways beyond LDL receptor mediated clearance may be involved in Lp(a) reduction by PCSK9 inhibition.
-Moreover, LDL with and without apo(a) tended to have different preference to be cleared from the circulation. 
 
 # Introduction
 
@@ -110,30 +110,22 @@ The lognormal regression coefficient can be interpreted as the expected proporti
 ### Separating Lp(a) content from LDL measures
 
 Since Lp(a) and LDL significantly overlap in density, as well as protein and lipid composition, LDL measures made by current technologies contain the content of Lp(a). 
-In this study, we developed a statistical model to address this issue. 
+In this study, we applied the Gaussian mixture model to address this issue. 
 Our statistical model was inspired by the biological relationship between Lp(a) and LDL. 
 Lp(a) is often considered to comprise a LDL particle and covalently bound apo(a). 
-Based on the above knowledge, we assumed that a pool of LDL particles is comprised by LDL particles with and without apo(a). 
-The outcome variable ($y$) was the particle concentration of Lp(a), which was measured by using the isoform-independent immunoturbidometric assay. 
-Again we used the lognormal distribution as likelihood function for the Lp(a) concentration. 
-Four predictor variables were used: 
-1) Large LDL particle concentration $\mathsf{LLDL}$; 
-2) Medium LDL particle concentration ($\mathsf{MLDL}$);
-3) Small LDL particle concentration ($\mathsf{SLDL}$);
-4) Whether the measurement is made at time of randomization or sixteen weeks after treatment (16 weeks after, $V = 1$).  
-These particle concentrations were measured by using the NMR metabolomics. 
-Because lipid-lowering medication such as statins, ezetimibe as well as evolocumab has causal effects on these LDL particle concentrations, we included three covariates (statin usage: $S = 1$; Ezetimibe usage $E = 1$; Evolocumab usage $P = 1$). 
-The mathematical details of the model was given below:
-$$\mathsf{Lp_a}[i] \sim Lognormal(\mu[i],\sigma)$$
-$$exp(\mu[i]) = \theta_L \times exp(\mu_{LLDL}[i]) + \theta_M \times exp(\mu_{MLDL}[i]) + \theta_S \times exp(\mu_{SLDL}[i])$$
-$$LLDL[i] \sim Lognormal(\mu_{LLDL[i]}, \sigma_{L})$$
-$$MLDL[i] \sim Lognormal(\mu_{MLDL[i]}, \sigma_{M})$$
-$$SLDL[i] \sim Lognormal(\mu_{SLDL[i]}, \sigma_{S})$$
-$$exp(\mu_{LLDL}[i]) = exp(\alpha_L) + \beta_{S,L} \times S[i] + \beta_{E,L} \times E[i] + (\beta_L + \beta_{P,L} \times P[i]) \times V[i]$$
-$$exp(\mu_{MLDL}[i]) = exp(\alpha_M) + \beta_{S,M} \times S[i] + \beta_{E,M} \times E[i] + (\beta_M + \beta_{P,M} \times P[i]) \times V[i]$$
-$$exp(\mu_{SLDL}[i]) = exp(\alpha_S) + \beta_{S,S} \times S[i] + \beta_{E,S} \times E[i] + (\beta_S + \beta_{P,S} \times P[i]) \times V[i]$$
+The diameter of Lp(a) is about 25 nm [@BERG1963]. 
+Based on the above knowledge, we assumed that the pool of large LDL particle (average diameter 25.5 nm) is a mixture of LDL particles with and without apo(a). 
+The outcome variable ($y$) was the particle concentration of large LDL, and described by a mixture of two normal distributions with a proportion parameter $\lambda$. 
 
-Regarding $\theta_L$, $\theta_M$ and $\theta_S$, we set the beta distribution $Beta(1,1)$ as their prior distributions, since these regression coefficients are interpreted as proportion of LDL particles with apo(a) tail. 
+$$P(y|\lambda, \mu, \sigma) = \prod_{i = 1}^{N}(\lambda \times N(\mu_1,\sigma_1) + (1 - \lambda) \times N(\mu_2, \sigma_2))$$
+
+The parameter $\mu_1$ and $\sigma_1$ were estimated based on the particle concentration of Lp(a), which was measured by using the isoform-independent immunoturbidometric assay. 
+The parameter $\mu_2$ was modeled as $\mu_2[i] = \alpha_L + \beta_{S,L} \times S[i] + \beta_{E,L} \times E[i] + (\beta_L + \beta_{P,L} \times P[i]) \times V[i]$.
+
+There were four covariates $V$, $S$, $E$ and $P$. 
+$V = 0$ referred the measurement was made at time of randomization, whereas $V = 1$ refereed to sixteen weeks after treatment. 
+Because lipid-lowering medication such as statins, ezetimibe as well as evolocumab has causal effects on these LDL particle concentrations, we included three covariates (statin usage: $S = 1$; Ezetimibe usage $E = 1$; Evolocumab usage $P = 1$). 
+Regarding parameter $\lambda$,  proportion of LDL particles with apo(a) tail, we set the beta distribution $Beta(1,1)$ as its prior distributions. 
 
 # Results
 
@@ -167,12 +159,12 @@ We observed no difference in concentrations of other metabolites covering amino 
 
 Lp(a) is thought to be comprised of a LDL particle and a covalently bound apo(a). 
 Because Lp(a) and LDL significantly overlap in density, as well as protein and lipid composition, LDL measures contain the content of Lp(a). 
-At baseline, we identified that on average 58% ([8%, 100%]) large LDL, 49% ([0.2%, 95%]) medium LDL particles and 55% ([7% 100%]) small LDL particles were with apo(a) (Figure 4). 
+In this study, we focused on the large LDL particle, because its diameter (25.5 nm) is close to the diameter of Lp(a). 
+At baseline, we identified that on average 24% ([0.2%, 47%]) large LDL particles were with apo(a) (Figure 4). 
 
-Sixteen weeks after treatment of evolocumab, on average 74% (28%, 100%) large LDL particles were with apo(a).  
-The average proportions of particles with apo(a) in the pool of medium and small LDL were 65% (12%, 100%) and 72% (24%, 100%), respectively (Figure 4).
-
-![Figure 4 Proportions of particles with and without apo(a) in large, medium and small LDL pools. The sizes of pie charts were scaled to the average particle concentrations.](./Lpa_LDL_composition.png)
+Sixteen weeks after treatment of evolocumab, on average 12% (0.02%, 36%) large LDL particles were with apo(a) in the placebo group. 
+In the treatment group, the average proportion of large LDL particles with apo(a) was 9% (0.0008%, 31%).
+We did not observe that the proportions of large LDL particles with apo(a) were different between the treatment and placebo group (-3% [-36% 23%]). 
 
 # Discussion
 
@@ -191,11 +183,9 @@ This discordance was suggested by a recent study to be related to alternative pa
 Lp(a) and LDL significantly overlap in density, as well as protein and lipid composition. 
 As a result, current technologies including the NMR metabolomics used in this study cannot distinguish these two lipoproteins, and include the content of Lp(a) in the LDL measurements. 
 We think that it is important to separate the Lp(a) content from the LDL measurements in order to better understand the discordance between these two lipoproteins in response to evolocumab. 
-To this end, we developed a statistical model based on the assumption that Lp(a) was comprised of a LDL particle and a covalently bound apo(a). 
-At baseline, we identified that on average about 50% of large, medium and small LDL particles had apo(a) tail. 
-After evolocumab treatment, on average about 60%-70% of large, medium and small LDL particles having apo(a) tail. 
-The relatively more LDL particles with apo(a) indicated that LDL particles with apo(a) were less preferably cleared from the circulation compared to their counterparts without apo(a). 
-Indeed a recent study showed that LDL without apo(a) was cleared faster than Lp(a), which was found to compete with LDL particles for binding to the LDL receptor [@Viney2018; @Raal2016]. 
+To this end, we applied a Gaussian mixture model based on the assumption that Lp(a) was comprised of a LDL particle and a covalently bound apo(a). 
+We identified that on average about 24% of large LDL particle had apo(a) tail. 
+We did not observe changes in proportions of large LDL particle with apo(a) tail due to evolocumab treatment. 
 
 ## Strengths and limitations
 
@@ -207,7 +197,7 @@ However, due to the heterogeneity of Lp(a) and limited number of participants, o
 Applying our statistical model with a larger number of participants as well as validation in the laboratory are warranted in the future studies. 
 
 In conclusion, our NMR metabolomic profiling revealed that Lp(a) reduction by PCSK9 inhibition corresponded to substantial reduction in VLDL, IDL and LDL particles as well as their lipid contents. 
-Our analysis also suggested that LDL with and without apo(a) had different preference to be cleared from the circulation. 
+Our analysis suggested that alternative pathways beyond LDL receptor mediated clearance may be involved in Lp(a) reduction by PCSK9 inhibition.
 
 # Authors
 
