@@ -17,54 +17,49 @@ Albert K. Groen, PhD$^1$
 # Abstract
 
 Background: 
-Epidemiological studies show that subjects with elevated lipoprotein(a) [Lp(a)] have a higher risk for developing cardiovascular diseases. 
-Inhibition of proprotein convertase subtilisin/kexin type 9 (PCSK9) is one of the limited options to lower Lp(a). 
-However, effects of PCSK9 inhibition with evolocumab on circulating metabolites such as lipoprotein subclasses, amino acids and fatty acids remain to be characterized. 
+Epidemiological studies substantiated that subjects with elevated lipoprotein(a) [Lp(a)] have a markedly increased cardiovascular risk. 
+Inhibition of proprotein convertase subtilisin/kexin type 9 (PCSK9) lowers both LDL cholesterol (LDL-C) as well as Lp(a), albeit modestly. 
+Effects of PCSK9 inhibition on circulating metabolites such as lipoprotein subclasses, amino acids and fatty acids remain to be characterized. 
 
 Methods:
-In this study, we performed nuclear magnetic resonance (NMR) metabolomics on plasma samples derived from 30 individuals (placebo N = 14; evolocumab N = 16). 
+We performed nuclear magnetic resonance (NMR) metabolomics on plasma samples derived from 30 individuals (placebo N = 14; evolocumab N = 16). 
 We assessed the effects of evolocumab treatment on circulating metabolites by running lognormal regression analyses. 
 Subsequently, we assessed the interrelationship between Lp(a) and 14 lipoprotein subclasses in response to treatment of evolocumab, by running multilevel multivariate regression analyses. 
 
 Results:
 On average, evolocumab treatment for 16 weeks resulted in a 17% (95% credible interval: 8% to 26%) reduction of circulating Lp(a), coupled with substantial reduction of VLDL, IDL and LDL particles as well as their lipid contents. 
-Although, we did not observe correlations between Lp(a) lowering and reduction in other 14 lipoprotein subclasses, we identified that increasing concentrations of baseline Lp(a) were associated with larger reduction in triglyceride-rich VLDL particles after evolocumab treatment.  
+Although we did not observe correlations between Lp(a) lowering and reduction in other 14 lipoprotein subclasses, we identified that increasing concentrations of baseline Lp(a) were associated with larger reduction in triglyceride-rich VLDL particles after evolocumab treatment.  
 
 Conclusions:
-Inhibition of PCSK9 with evolocumab massively decreased VLDL in addition to the well known effect on LDL. 
+Inhibition of PCSK9 with evolocumab markedly reduced VLDL particle concentrations in addition to lowering LDL-C. 
 The substantial reduction in VLDLs after evolocumab treatment indicates enhanced clearance of VLDL particles in patients with high Lp(a). 
 
 # Introduction
 
-lipoprotein(a) [Lp(a)], synthesized in the liver, is a low-density lipoprotein (LDL)-like particle with an apolipoprotein(a) [apo(a)] tail. 
-Similar to other lipoproteins, Lp(a) is cleared from the circulation primarily by the liver [@Cain2005]. 
-Epidemiological studies showed that subjects with elevated Lp(a) had increasing risk of developing cardiovascular disease [@ODonoghue2019]. 
-The biological mechanism underlying the cardiovascular risk of Lp(a) remains to be elucidated. 
-One mechanism is that Lp(a) may induce macrophage apoptosis and plaque necrosis through activation of a pathway involving CD36 (Cluster of differentiation 36) and TLR2 (Toll-like receptor 2) [@Seimon2010]. 
-Unlike LDL-cholesterol lowering, limited therapeutic options are available to reduce Lp(a) in plasma [@VanCapelleveen2016]. 
-One of the agents that are capable to lower circulating Lp(a) levels is proprotein convertase subtilisin/kexin type 9 (PCSK9) monoclonal antibody, which prevents extracellular PCSK9 from binding to the LDL receptor, and results in supraphysiological abundance of LDL receptors [@Raal2014; @Raal2016].
-The excess number of LDL receptors on the surface of hepatocytes were hypothesized to be responsible for the enhanced Lp(a) catabolism [@Romagnuolo2015; @Raal2016]. 
-However, the above hypothesis does not concur with the effect of statin therapy, which significantly increases hepatic LDL receptor abundances but also increases plasma Lp(a) levels [@Tsimikas2019]. 
-The same hypothesis was also challenged by the observation that LDL receptor knock out mice had similar Lp(a) catabolism compared to wild type mice [@Cain2005]. 
+Lipoprotein(a) [Lp(a)], synthesized in the liver, is a low-density lipoprotein (LDL)-like particle covalently bound to the apolipoprotein(a) [apo(a)]. 
+Lp(a) is cleared from the circulation primarily by the liver [@Cain2005], and the exact mechanism remains to be elucidated. 
+Epidemiological studies substantiated a markedly increased cardiovascular risk in subjects with elevated Lp(a), involving both pro-inflammatory as well as pro-coagulant effects [@ODonoghue2019]. 
+To date, limited therapeutic options are available to reduce Lp(a) in plasma [@VanCapelleveen2016]. 
+One agent that lowers Lp(a) levels is proprotein convertase subtilisin/kexin type 9 (PCSK9) monoclonal antibody, resulting in increased abundance of LDL receptors [@Raal2014; @Raal2016].
+The excess number of LDL receptors on the surface of hepatocytes may contribute to enhanced Lp(a) catabolism [@Romagnuolo2015; @Raal2016]. 
+However, this concept is not supported the effect of statin therapy, which also increases hepatic LDL receptor abundances with a concomitant increase of plasma Lp(a) [@Tsimikas2019]. 
 Hence, the exact role of the LDL-receptor in Lp(a) catabolism has not been elucidated and remains a matter of debate [@Reyes-Soffer2017; @Watts2018; @Stoekenbroek2018]. 
-The LDL receptor is not the only target of PCSK9. 
-PCSK9 also induces the degradation of the VLDL (very low density lipoprotein) receptor, ApoER2 (apolipoprotein E receptor 2), and CD36 [@Poirier2008; @Demers2015]. 
-Interestingly, the VLDL receptor and CD36 are receptors for triglyceride-rich lipoproteins (TRLs) as well as Lp(a), indicating a possible interrelationship between Lp(a) and TRL metabolism [@Argraves1997; @Seimon2010; @Dijk2018]. 
-The metabolic link between Lp(a) and TRL metabolism was confirmed by a recent NMR (nuclear magnetic resonance) metabolomics study, in which a Lp(a)-raising genotype was identified to associate with decreasing concentrations of triglyceride-rich VLDL particles [@Kettunen2016]. 
-However, the mechanism underlying this inverse relationship is unknown. 
-As a cost-effective approach, NMR metabolomics simultaneously quantifies hundreds of circulating biomarkers and provides insights on multiple metabolic pathways [@Soininen2009].
-A NMR metabolomics study showed that genetic inhibition of PCSK9 and statin therapy had similar effects on circulating metabolites [@Sliz2018]. 
-However, genetic inhibition of PCSK9 is different from inhibition with monoclonal antibody since genetic inhibition includes intracellular functions of PCSK9. 
-Furthermore, although PCSK9 monoclonal antibody is known for lowering LDL cholesterol and Lp(a), the relationship between Lp(a) lowering and metabolism of other lipoproteins has not been studied.  
-In the current study, we analyzed NMR metabolomics of plasma derived from 30 subjects with elevated Lp(a) (placebo 14; evolocumab 16). 
-We first ran lognormal regression analyses to identify metabolic changes corresponding to evolocumab treatment.  
-Next, we developed a multilevel multivariate model to assess the relationship between Lp(a) lowering and metabolism of 14 lipoprotein subclasses. 
+
+Besides the LDL receptor, PCSK9 also induces the degradation of the VLDL (very low density lipoprotein) receptor, ApoER2 (apolipoprotein E receptor 2), and CD36 (cluster of differentiation 36) [@Poirier2008; @Demers2015]. 
+Interestingly, the VLDL receptor and CD36 are receptors for triglyceride-rich lipoproteins (TRLs) as well as Lp(a), indicating a potential interaction between Lp(a) and TRL metabolism [@Argraves1997; @Seimon2010; @Dijk2018]. 
+A link between Lp(a) and TRL metabolism is supported by a recent NMR (nuclear magnetic resonance) metabolomics study, in which a Lp(a)-raising genotype was found to associate with decreasing concentrations of triglyceride-rich VLDL particles [@Kettunen2016]. 
+The mechanism underlying this inverse relationship is unknown. 
+Another NMR metabolomics study showed that genetic inhibition of PCSK9 and statin therapy had similar effects on circulating metabolites [@Sliz2018]. 
+However, genetic inhibition of PCSK9 differs from inhibition with monoclonal antibody, since genetic inhibition includes intracellular functions of PCSK9. 
+Moreover, data on the relationship between Lp(a) lowering and metabolism of other lipoproteins are scarce.  
+
+In the present study, we analyzed NMR metabolomics of plasma derived from 30 subjects with elevated Lp(a), using either placebo (n = 14) or PCSK9 inhibitor (evolocumab, n = 16). 
 
 # Methods
 
 ## Study design
 
-This was a site-specific sub study of the ANITSCHKOW trial (NCT02729025) conducted at the Amsterdam UMC in The Netherlands between April 2016 and July 2017. 
+This was a substudy of the ANITSCHKOW trial (NCT02729025) conducted at the Amsterdam UMC in The Netherlands between April 2016 and July 2017. 
 The ANITSCHKOW trial was a phase 3b, multicenter, randomized, double-blind, placebo-controlled trial using subcutaneous injections of evolocumab 420mg Q4W for 16 weeks as investigational product [@Stiekema2018].
 The study was conducted in accordance to the principles of the Declaration of Helsinki and the study protocol was approved by the ethic committee of the Amsterdam UMC. 
 
