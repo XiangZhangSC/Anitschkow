@@ -53,7 +53,8 @@ Another NMR metabolomics study showed that genetic inhibition of PCSK9 and stati
 However, genetic inhibition of PCSK9 differs from inhibition with monoclonal antibody, since genetic inhibition includes intracellular functions of PCSK9. 
 Moreover, data on the relationship between Lp(a) lowering and metabolism of other lipoproteins are scarce.  
 
-In the present study, we analyzed NMR metabolomics of plasma derived from 30 subjects with elevated Lp(a), using either placebo (n = 14) or PCSK9 inhibitor (evolocumab, n = 16). 
+In the present study, we studied 30 subjects with elevated Lp(a), using either placebo (n = 14) or PCSK9 inhibitor (evolocumab, n = 16). 
+In particular, we analyzed NMR metabolomics of plasma derived from these participants at baseline and 16 weeks after treatment of evolocumab. 
 
 # Methods
 
@@ -138,8 +139,7 @@ Results were presented with the posterior mean with 95% credible interval (CI).
 
 # Results
 
-The current study included 30 patients (evolocumab, n = 16; placebo, n = 14). 
-Baseline characteristics of the two groups were comparable and are provided in Table 1. 
+Baseline characteristics of the evolocumab and the placebo group were comparable (Table 1). 
 
 ## Metabolic effects of PCSK9 inhibition with evolocumab
 
@@ -171,7 +171,7 @@ We observed that Lp(a) lowering was not associated with reduction of the 14 lipo
 
 ![Figure 4 Relationship between Lp(a) lowering and reduction in 14 lipoprotein subclasses. Circles represent the posterior mean Pearson correlation coefficients. Lines refer to the 95% credible intervals.](./corr_lipoproteins_lpa.png)
 
-However, we identified that the reduction in medium-sized VLDL particles was associated with increasing baseline Lp(a) concentrations (Pearson correlation coefficient -0.5 [-0.8, -0.06]). 
+Interestingly, we observed that the reduction in medium-sized VLDL particles was associated with increasing baseline Lp(a) concentrations (Pearson correlation coefficient -0.5 [-0.8, -0.06]). 
 The correlations between baseline Lp(a) concentrations and reduction in other VLDL particles, including extremely large, very large, large, small and very small VLDLs, were -0.1 [-0.6, 0.3], -0.03 [-0.4, 0.4], -0.3 [-0.7, 0.2], -0.1 [-0.7, 0.6], and 0.2 [-0.3, 0.7], respectively. 
 
 ![Figure 5 Reduction of medium VLDL particles correlated with baseline lipoprotein(a) concentrations. Every circle represents the posterior mean reduction of medium VLDL particle concentration and the posterior mean of baseline lipoprotein(a) in a patient treated with evolocumab. The verticle and horizontal bar represents the 95% credible interval. The blue dashed line represented the average percentage (50%) change in medium VLDL particle after evolocumab treatment.](./Baseline_lpa_mVLDL.png)
