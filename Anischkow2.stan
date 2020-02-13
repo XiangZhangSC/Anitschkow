@@ -1,87 +1,118 @@
 //
-// This Stan program defines a simple model, with a
-// vector of values 'y' modeled as normally distributed
-// with mean 'mu' and standard deviation 'sigma'.
+// This Stan program defines a bivariate normal model, with a
+// vector of values 'y' modeled by bivariate normal distribution.
 //
-// Learn more about model development with Stan at:
 //
-//    http://mc-stan.org/users/interfaces/rstan.html
-//    https://github.com/stan-dev/rstan/wiki/RStan-Getting-Started
 //
-
-// The input data is a vector 'y' of length 'N'.
 data {
   int<lower=0> N;
-  int<lower=0> N_obs;
-  int<lower=0> N_mis;
-  vector[N] y;
-  vector[N_obs] x1_obs; // L-LDL-P nmol/l
-  vector[N_obs] x2_obs; // M-LDL-P nmol/l
-  vector[N_obs] x3_obs; // S-LDL-P nmol/l
-  int<lower=0,upper=N> which_x1_obs[N_obs];
-  int<lower=0,upper=N> which_x1_mis[N_mis];
-  int<lower=0,upper=N> which_x2_obs[N_obs];
-  int<lower=0,upper=N> which_x2_mis[N_mis];
-  int<lower=0,upper=N> which_x3_obs[N_obs];
-  int<lower=0,upper=N> which_x3_mis[N_mis];
+  int<lower=0> N_y1_obs;
+  int<lower=0> N_y1_mis;
+  int<lower=0> N_y1_cen;
+  int<lower=0> N_y2_obs;
+  int<lower=0> N_y2_mis;
+  int<lower=0> N_y2_cen;
+  int<lower=1,upper=N> which_y1_obs[N_y1_obs];
+  int<lower=1,upper=N> which_y1_mis[N_y1_mis];
+  int<lower=1,upper=N> which_y1_cen[N_y1_cen];
+  int<lower=1,upper=N> which_y2_obs[N_y2_obs];
+  int<lower=1,upper=N> which_y2_mis[N_y2_mis];
+  int<lower=1,upper=N> which_y2_cen[N_y2_cen];
+  int<lower=1> N_group;
+  real<lower=0> y1_obs[N_y1_obs];
+  real<lower=0> y2_obs[N_y2_obs];
+  int<lower=1,upper=N_group> group_id[N];
+  real<lower=0> lpa1[N];
+  real<lower=0> lpa2[N];
+  int<lower=0,upper=1> y2_observed[N];
 }
-
-// The parameters accepted by the model. Our model
-// accepts two parameters 'mu' and 'sigma'.
-parameters {
-  real mu_x1; 
-  real mu_x2; 
-  real mu_x3; 
-  real<lower=0> sigma_x1; 
-  real<lower=0> sigma_x2; 
-  real<lower=0> sigma_x3;
-  vector<lower=0>[N_mis] x1_mis; 
-  vector<lower=0>[N_mis] x2_mis;
-  vector<lower=0>[N_mis] x3_mis;
-  real<lower=0,upper=1> b1; 
-  real<lower=0,upper=1> b2; 
-  real<lower=0,upper=1> b3;
-  real<lower=0> sigma;
-}
-
-// The model to be estimated. We model the output
-// 'y' to be normally distributed with mean 'mu'
-// and standard deviation 'sigma'.
-model {
-  vector[N] x1; 
-  vector[N] x2; 
-  vector[N] x3;
+transformed data {
+  vector<lower=0>[2] min_y_obs;
+  real<lower=0> lod; // limit of detection
+  vector[N] zlpa1;
   
-  x1[which_x1_obs] = x1_obs;
-  x1[which_x1_mis] = x1_mis;
-  
-  x2[which_x2_obs] = x2_obs;
-  x2[which_x2_mis] = x2_mis;
-  
-  x3[which_x3_obs] = x3_obs;
-  x3[which_x3_mis] = x3_mis;
-  
-  mu_x1 ~ normal( 0, 10 );
-  mu_x2 ~ normal( 0, 10 );
-  mu_x3 ~ normal( 0, 10 );
-  
-  sigma_x1 ~ exponential( 1 );
-  sigma_x2 ~ exponential( 1 );
-  sigma_x3 ~ exponential( 1 );
-  
-  x1 ~ lognormal( mu_x1, sigma_x1 );
-  x2 ~ lognormal( mu_x2, sigma_x2 );
-  x3 ~ lognormal( mu_x3, sigma_x3 );
-  
-  b1 ~ beta( 1, 1 );
-  b2 ~ beta( 1, 1 );
-  b3 ~ beta( 1, 1 );
-  sigma ~ exponential( 1 );
+  min_y_obs = [min(y1_obs), min(y2_obs)]';
+  lod = min(min_y_obs);
   
   for ( i in 1:N ) {
-    y[i] ~ normal(b1 * x1[i] + b2 * x2[i] + b3 * x3[i], sigma);
+    zlpa1[i] = (lpa1[i] - mean(lpa1)) / sd(lpa1);
+  }
+}
+parameters {
+  real<lower=0> y1_mis[N_y1_mis];
+  real<lower=0,upper=lod> y1_cen[N_y1_cen];
+  real<lower=0> y2_mis[N_y2_mis];
+  real<lower=0,upper=lod> y2_cen[N_y2_cen];
+  real bL;
+  vector[N_group] bL_group;
+  real bY;
+  vector[N_group] bY_group;
+  real mu_y1;
+  real<lower=0> sigma_y1;
+  real<lower=0> sigma_y2;
+  corr_matrix[2] Rho; // prior correlation
+  real<lower=0> sigma_lpa2;
+  
+}  
+transformed parameters {
+}
+model {
+  vector[2] log_lpa2_y2[N];
+  row_vector[2] mu_v2[N];
+  vector[2] tau;
+  real y1[N];
+  real y2[N];
+  real zy1[N];
+  
+  y1[which_y1_obs] = y1_obs;
+  y1[which_y1_mis] = y1_mis;
+  y1[which_y1_cen] = y1_cen;
+  
+  y2[which_y2_obs] = y2_obs;
+  y2[which_y2_mis] = y2_mis;
+  y2[which_y2_cen] = y2_cen;
+  
+  // prior
+  bL ~ normal( 0, 10 );
+  bL_group ~ normal( 0, 10 );
+  bY ~ normal( 0, 10 );
+  bY_group ~ normal( 0, 10 );
+  mu_y1 ~ normal( 0, 10 );
+  sigma_y1 ~ exponential( 1 );
+  sigma_y2 ~ exponential( 1 );
+  sigma_lpa2 ~ exponential( 1 );
+  
+  y1 ~ lognormal( mu_y1, sigma_y1 );
+  
+  tau[1] = sigma_lpa2;
+  tau[2] = sigma_y2;
+  
+  Rho ~ lkj_corr(2);
+  
+  for ( i in 1:N ) {
+    zy1[i] = (y1[i] - mu_y1) / sigma_y1;
+    
+    // likelihood
+    mu_v2[i,1] = bL_group[group_id[i]] + bL * zlpa1[i];
+    mu_v2[i,2] = bY_group[group_id[i]] + bY * zy1[i];
+    
+    log_lpa2_y2[i,1] = log(lpa2[i]);
+    log_lpa2_y2[i,2] = log(y2[i]);
+    
+    if (y2_observed[i] == 1) {
+      log_lpa2_y2[i] ~ multi_normal( mu_v2[i], quad_form_diag(Rho, tau));
+    }
+    else if (y2_observed[i] == 0) {
+      lpa2[i] ~ lognormal( bL_group[group_id[i]] + bL * zlpa1[i], sigma_lpa2 );
+      y2[i] ~ lognormal( bY_group[group_id[i]] + bY * zy1[i], sigma_y2 ); 
+    }
   }
 }
 generated quantities {
+  real delta_L;
+  real delta_Y;
   
+  delta_L = exp(bL_group[2] - bL_group[1]) - 1;
+  delta_Y = exp(bY_group[2] - bY_group[1]) - 1;
+
 }
