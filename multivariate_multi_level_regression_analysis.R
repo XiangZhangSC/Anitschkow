@@ -16,9 +16,6 @@ library(tidybayes)
 library(stringr)
 library(forcats)
 
-# load the multivariate multi level model
-AK3 <- stan_model("multivariate_multi_level_regression_model.stan")
-
 #######################################################
 # 1. Import data
 #######################################################
@@ -91,6 +88,9 @@ lipoproteins <- Nightingale.nested %>%
 ##########################################################
 # 3. Run multivariate multi level regression analyses
 ##########################################################
+
+# load the multivariate multi level model
+AK3 <- stan_model("multivariate_multi_level_regression_model.stan")
 
 xiang_cluster <- create_cluster(cores = 10) %>% 
   cluster_library("purrr") %>% 
