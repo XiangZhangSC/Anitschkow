@@ -1,18 +1,18 @@
 ---
-title: "Metabolic Effects of PCSK9 Inhibition With Evolocumab in Subjects with Elevated Lp(a)"
 output: word_document
 bibliography: /home/xiang/Documents/Bibliography/lpa.bib
-csl: journal-of-lipid-research.csl
+csl: lipids-in-health-and-disease.csl
 ---
 
-Xiang Zhang, PhD$^1,^2$,
-Lotte C.A. Stiekema, MD$^2$,
-Erik S.G. Stroes, PhD$^2$,
-Albert K. Groen, PhD$^1$
+Metabolic Effects of PCSK9 Inhibition With Evolocumab in Subjects with Elevated Lp(a)
+  
+Xiang Zhang, xiang.zhang@wur.nl Department of Experimental Vascular Medicine, Amsterdam University Medical Center, University of Amsterdam, Meibergdreef 9, 1105 AZ Amsterdam, The Netherlands; Human and Animal Physiology, Wageningen University, De Elst 1, 6708 WD Wageningen, The Netherlands
 
-1. Department of Experimental Vascular Medicine, Amsterdam University Medical Center, University of Amsterdam, Meibergdreef 9, 1105 AZ Amsterdam, The Netherlands
-2. Human and Animal Physiology, Wageningen University, De Elst 1, 6708 WD Wageningen, The Netherlands
-3. Department of Vascular Medicine, Amsterdam University Medical Center, University of Amsterdam, Meibergdreef 9, 1105 AZ Amsterdam, The Netherlands
+Lotte C.A. Stiekema, l.c.stiekema@amsterdamumc.nl Department of Vascular Medicine, Amsterdam University Medical Center, University of Amsterdam, Meibergdreef 9, 1105 AZ Amsterdam, The Netherlands
+
+Erik S.G. Stroes, e.s.stroes@amsterdamumc.nl Department of Vascular Medicine, Amsterdam University Medical Center, University of Amsterdam, Meibergdreef 9, 1105 AZ Amsterdam, The Netherlands
+
+Albert K. Groen, a.k.groen@amsterdamumc.nl Department of Experimental Vascular Medicine, Amsterdam University Medical Center, University of Amsterdam, Meibergdreef 9, 1105 AZ Amsterdam, The Netherlands
 
 # Abstract
 
@@ -22,41 +22,47 @@ Inhibition of proprotein convertase subtilisin/kexin type 9 (PCSK9) lowers both 
 Effects of PCSK9 inhibition on circulating metabolites such as lipoprotein subclasses, amino acids and fatty acids remain to be characterized. 
 
 Methods:
-We performed nuclear magnetic resonance (NMR) metabolomics on plasma samples derived from 30 individuals (placebo N = 14; evolocumab N = 16). 
-We assessed the effects of evolocumab treatment on circulating metabolites by running lognormal regression analyses. 
-Subsequently, we assessed the interrelationship between Lp(a) and 14 lipoprotein subclasses in response to treatment of evolocumab, by running multilevel multivariate regression analyses. 
+We performed nuclear magnetic resonance (NMR) metabolomics on plasma samples derived from 30 individuals with elevated Lp(a) (> 150 mg/dL). 
+The 30 participants were randomly assigned into two groups, placebo (N = 14) and evolocumab (N = 16). 
+We assessed the effect of 16 weeks of evolocumab 420mg Q4W treatment on circulating metabolites by running lognormal regression analyses, and compared this to placebo. 
+Subsequently, we assessed the interrelationship between Lp(a) and 14 lipoprotein subclasses in response to treatment with evolocumab, by running multilevel multivariate regression analyses. 
 
-Results:
-On average, evolocumab treatment for 16 weeks resulted in a 17% (95% credible interval: 8% to 26%) reduction of circulating Lp(a), coupled with substantial reduction of VLDL, IDL and LDL particles as well as their lipid contents. 
-Although we did not observe correlations between Lp(a) lowering and reduction in other 14 lipoprotein subclasses, we identified that increasing concentrations of baseline Lp(a) were associated with larger reduction in triglyceride-rich VLDL particles after evolocumab treatment.  
+Results: 
+On average, evolocumab treatment for 16 weeks resulted in a 17% (95% credible interval: 8% to 26%, P < 0.001) reduction of circulating Lp(a), coupled with substantial reduction of VLDL, IDL and LDL particles as well as their lipid contents. 
+Interestingly, increasing concentrations of baseline Lp(a) were associated with larger reduction in triglyceride-rich VLDL particles after evolocumab treatment.  
 
 Conclusions:
 Inhibition of PCSK9 with evolocumab markedly reduced VLDL particle concentrations in addition to lowering LDL-C. 
 The extent of reduction in VLDL particles depended on the baseline level of Lp(a). 
 Our findings suggest a marked effect of evolocumab on VLDL metabolism in subjects with elevated Lp(a).
 
-# Introduction
+Trial registration:
+Clinical trial registration information is registered at ClinicalTrials.gov on April 14, 2016 with the registration number NCT02729025.
+
+Keywords: PCSK9 antibodies; Evolocumab; Lipoprotein(a); Metabolomics; VLDL
+
+# Background
 
 Lipoprotein(a) [Lp(a)], synthesized in the liver, is a low-density lipoprotein (LDL)-like particle covalently bound to the apolipoprotein(a) [apo(a)]. 
-Lp(a) is cleared from the circulation primarily by the liver [@Cain2005], and the exact mechanism remains to be elucidated. 
+Lp(a) is cleared from the circulation primarily by the liver [@Cain2005], but the exact mechanism remains to be elucidated. 
 Epidemiological studies substantiated a markedly increased cardiovascular risk in subjects with elevated Lp(a), involving both pro-inflammatory as well as pro-coagulant effects [@ODonoghue2019]. 
 To date, limited therapeutic options are available to reduce Lp(a) in plasma [@VanCapelleveen2016]. 
 One agent that lowers Lp(a) levels is proprotein convertase subtilisin/kexin type 9 (PCSK9) monoclonal antibody, resulting in increased abundance of LDL receptors [@Raal2014; @Raal2016].
 The excess number of LDL receptors on the surface of hepatocytes may contribute to enhanced Lp(a) catabolism [@Romagnuolo2015; @Raal2016]. 
-However, this concept is not supported the effect of statin therapy, which also increases hepatic LDL receptor abundances with a concomitant increase of plasma Lp(a) [@Tsimikas2019]. 
-Hence, the exact role of the LDL-receptor in Lp(a) catabolism has not been elucidated and remains a matter of debate [@Reyes-Soffer2017; @Watts2018; @Stoekenbroek2018]. 
+However, this concept is not supported by the effect of statin therapy, which also increases abundance of the hepatic LDL receptor with a concomitant increase of plasma Lp(a) [@Tsimikas2019]. 
+Hence, the exact role of the LDL-receptor in Lp(a) catabolism remains a matter of debate [@Reyes-Soffer2017; @Watts2018; @Stoekenbroek2018]. 
 
 Besides the LDL receptor, PCSK9 also induces the degradation of the VLDL (very low density lipoprotein) receptor, ApoER2 (apolipoprotein E receptor 2), and CD36 (cluster of differentiation 36) [@Poirier2008; @Demers2015]. 
 Interestingly, the VLDL receptor and CD36 are receptors for triglyceride-rich lipoproteins (TRLs) as well as Lp(a), indicating a potential interaction between Lp(a) and TRL metabolism [@Argraves1997; @Seimon2010; @Dijk2018]. 
 A link between Lp(a) and TRL metabolism is supported by a recent NMR (nuclear magnetic resonance) metabolomics study, in which a Lp(a)-raising genotype was found to associate with decreasing concentrations of triglyceride-rich VLDL particles [@Kettunen2016]. 
 The mechanism underlying this inverse relationship is unknown. 
 Another NMR metabolomics study showed that genetic inhibition of PCSK9 and statin therapy had similar effects on circulating metabolites [@Sliz2018]. 
-However, genetic inhibition of PCSK9 differs from inhibition with monoclonal antibody, since genetic inhibition includes intracellular functions of PCSK9. 
+However, genetic inhibition of PCSK9 differs from inhibition with a monoclonal antibody, since genetic inhibition includes intracellular functions of PCSK9. 
 Moreover, data on the relationship between Lp(a) lowering and metabolism of other lipoproteins are scarce.  
 
-In the present study, we aim to study metabolic effects of PCSK9 inhibition with evolocumab in subjects with elevated Lp(a). 
-To this end, we studied 30 subjects with elevated Lp(a), using either placebo (n = 14) or PCSK9 inhibitor (evolocumab, n = 16). 
-We analyzed NMR metabolomics of plasma derived from these participants at baseline and 16 weeks after treatment of evolocumab. 
+The aim of the current study was to investigate metabolic effects of PCSK9 inhibition (evolocumab) in patients with elevated Lp(a). 
+To this end, we studied 30 subjects with elevated Lp(a), using either placebo (n = 14) or the PCSK9 inhibitor (evolocumab, n = 16). 
+We analyzed NMR metabolomics of plasma derived from these participants at baseline and 16 weeks after treatment. 
 We found that evolocumab had a marked effect on VLDL metabolism in subjects with elevated Lp(a). 
 
 # Methods
@@ -64,13 +70,63 @@ We found that evolocumab had a marked effect on VLDL metabolism in subjects with
 ## Study design
 
 This was a substudy of the ANITSCHKOW trial (NCT02729025) conducted at the Amsterdam UMC in The Netherlands between April 2016 and July 2017. 
-The ANITSCHKOW trial was a phase 3b, multicenter, randomized, double-blind, placebo-controlled trial using subcutaneous injections of evolocumab 420mg Q4W for 16 weeks as investigational product [@Stiekema2018].
-The study was conducted in accordance to the principles of the Declaration of Helsinki and the study protocol was approved by the ethic committee of the Amsterdam UMC. 
+The ANITSCHKOW trial was a phase 3b, multicenter, randomized, double-blind, placebo-controlled trial using subcutaneous injections of evolocumab 420mg Q4W for 16 weeks as investigational product [@Stiekema2018]. 
+The current study was based on 30 patients (placebo N = 14, evolocumab N = 16). 
+Written informed consent was obtained from each patient included in the study. 
+The study protocol conforms to the ethical guidelines of the Declaration of Helsinki. 
+The study protocol was approved by the ethic committee of the Amsterdam UMC. 
 
-Patients were found to be eligible for enrollment in the ANITSCHKOW trial when they were $\geq$ 50 years of age, had a fasting LDL-C of $\geq$ 2.6 mmol/L (100mg/dL), and an Lp(a) of $\geq$ 125nmol/L (50mg/dL). 
-At the time of randomization, study subjects who were on lipid lowering treatment had to be on a stable dosing regimen for at least 8 weeks. 
-Exclusion criteria were among others, diabetes mellitus and a cardiovascular event within three months prior to randomization. 
-The complete list of eligibility criteria was reported previously [@Stiekema2018].
+The complete list of eligibility criteria for the ANITSCHKOW trial were:
+
+* Inclusion criteria
+
+  + Patient has provided written informed consent prior to initiation of any study specific activities/procedures
+
+  + Male or female, $\geq$ 50 years of age at the time of informed consent
+
+  + Fasting Lp(a) $\geq$ 125 nmol/L (50 mg/dL)
+
+  + Fasting LDL-C $\geq$ 2.6 mmol/L (100 mg/dL)
+
+  + For patients receiving lipid-lowering therapy (not required to participate in this study), lipid-lowering therapy, including statin dose, must be unchanged for $\geq$ 8 weeks prior to screening TBRmax above 1.6 (either right carotid, left carotid or thoracic aorta) on FDG-PET/CT
+
+* Exclusion criteria 
+
+  + Currently receiving, or < 4 weeks since receiving, treatment in another investigational device or drug study(ies), or participating in other investigational procedures
+
+  + Known diagnosis of diabetes mellitus or screening fasting serum glucose $\geq$ 7 mmol/L or glycated haemoglobin (HbA1c) $\geq$ 6.5%
+
+  + History of homozygous familial hypercholesterolemia
+
+  + Recent cardiovascular event (myocardial infarction, unstable angina, percutaneous coronary intervention [PCI], coronary artery bypass graft, or stroke) within 3 months prior to randomization, or planned cardiac surgery, PCI or carotid stenting, or planned major non-cardiac surgery during the course of the study period
+
+  + Currently undergoing lipid apheresis
+
+  + Known contraindications or limitations to FDG-PET/CT (eg, scanner weight limit, devices that can cause image artifacts, or carotid/aortic stents/grafts)
+
+  + Autoimmune disease/vasculitis, active inflammatory diseases, proven or suspected bacterial infections
+
+  + Recent (< 1 month prior to screening) or ongoing serious infection requiring intravenous antibiotic therapy
+
+  + Recent (< 6 weeks prior to screening) or current treatment with medications that may have a significant effect on plaque inflammation as measured by plaque TBR, including: oral, rectal, or injectable corticosteroids or immunosuppressive medications (eg, cyclosporine, methotrexate, tacrolimus, azathioprine, anti-thymocyte globulin, sirolimus, anti-tumour necrosis factor agents such as infliximab, anti-interleukin [IL] 6 therapy such as tocilizumab, or anti-IL1 therapy)
+
+  + Recent (< 6 weeks prior to screening) or current treatment with aspirin (> 325 mg/day) or nonsteroidal anti-inflammatory drugs (NSAIDs) (>1000 mg/day)
+
+  + Known sensitivity to any of the active substances or excipients (eg, carboxymethylcellulose) to be administered during dosing
+
+  + Treatment with a cholesterol ester transfer protein inhibitor (eg, anacetrapib, dalcetrapib, evacetrapib) or mipomersen or lomitapide in the last 12 months prior to screening
+
+  + Known systemic disorders such as hepatic, renal, hematologic, and malignant diseases or any clinically significant medical condition that could interfere with the conduct of the study
+
+  + History of malignancy (except non-melanoma skin cancers, cervical in-situ carcinoma, breast ductal carcinoma in situ, or stage 1 prostate carcinoma) within the last 5 years
+
+  + Patients likely to not be available to complete all protocol-required study visits or procedures, or unreliability as a study participant (eg, alcohol or other drug abuse in the past year or psychosis), to the best of the patient’s and investigator’s knowledge
+  
+  + History or evidence of any other clinically significant disorder, condition or disease that, in the opinion of the investigator or sponsor physician, if consulted, would pose a risk to subject safety or interfere with the study evaluation, procedures, or completion
+  
+  + Prior treatment with evolocumab or any other therapy to inhibit PCSK9
+  
+  + Pregnant or breastfeeding or planning to become pregnant or breastfeed during treatment with study drug and for an additional 15 weeks after the last dose of study drug
 
 ## Biochemical measurements
 
@@ -86,7 +142,7 @@ Quantification of 225 metabolic measures was performed by using a high-throughpu
 The 225 metabolic measures contain around 150 primary concentrations as well as ratios that were derived from the primary concentrations. 
 In this study, we focused on primary concentrations of circulating metabolites that cover multiple metabolic pathways including lipoproteins, fatty acids as well as amino acids and glycolysis intermediates. 
 The following 14 lipoprotein subclasses and their lipid compositions were quantified: 
-extremely large (average particle diameter >75 nm), 
+extremely large (average particle diameter > 75 nm), 
 very large (average particle diameter 64.0 nm), large (53.6 nm), medium (44.5 nm), small (36.8 nm) and very small VLDL (31.3 nm); 
 intermediate density lipoprotein (IDL; 28.6 nm); 
 three LDL subclasses, i.e. large (25.5 nm), medium (23.0 nm) and small LDL (18.7 nm); 
@@ -100,7 +156,8 @@ The complete list of the 225 metabolic measures can be found at  https://nightin
 To assess the effect of evolocumab on levels of a circulating metabolite, we ran lognormal regression analysis. 
 The outcome variable ($y$) was the concentration of a metabolite. 
 Two predictor variables were in the regression model: 1) evolocumab treatment (evolocumab, $T_i$ = 1; placebo $T_i = 0$); 
-2) metabolite concentration at time of randomization ($x$).
+2) metabolite concentration at time of randomization ($x$). 
+To investigate potential combined effects of evolocumab and other lipid lowering drugs on lipoproteine subclasses, we added two indicator variables $S$ and $E$. If a patient was treated with statin, then $S = 1$, otherwise $S = 0$. Similarly, if a patient was also treated with ezetimibe, then $E = 1$, otherwise $E = 0$. 
 The baseline concentrations were centered and scaled so that the mean is 0 and standard deviation is 1.
 The lognormal distribution was chosen to model the outcome variable because its values were positive continuous. 
 Due to missing observations in outcome variables, we applied the Bayesian approach to handle missing data. 
@@ -146,38 +203,27 @@ Results were presented with the posterior mean with 95% credible interval (CI).
 
 Baseline characteristics of the evolocumab and the placebo group were comparable (Table 1). 
 
-On average, evolocumab treatment for 16 weeks resulted in a 17% (95% credible interval: 8% to 26%) reduction in Lp(a), together with a concomitant 67% (57%, 76%) and 21% (6% 35%) reduction in LDL cholesterol and triglyceride, respectively. 
+On average, evolocumab treatment for 16 weeks resulted in a 17% (95% credible interval: [8%, 26%]) reduction in Lp(a), together with a concomitant 67% [57%, 76%] and 21% [6%, 35%] reduction in LDL cholesterol and triglyceride, respectively. 
 
 To identify the metabolic effects corresponding to PCSK9 inhibition with evolocumab, we performed NMR metabolomics covering metabolic pathways such as lipoprotein subclasses, fatty acids, amino acids and glycolysis. 
-We observed that evolocumab treatment resulted in substantial reduction in particle concentration of extremely large (80% [48% 100%]), very large (90% [70% 100%]), large (60% [34%, 83%]), medium (50% [36%, 63%]), small (39% [32% 46%]) and very small VLDL (47% [40% 53%]).
-We also observed that evolocumab treatment resulted in particle concentration reduction in IDL (53% [45%, 60%]), large (56% [48% 65%]), medium (59% [50%, 67%]) and small LDL (55% [47%, 64%]). 
-In addition, we observed that evolocumab treatment resulted in decreased concentrations of very large HDL particles (24% [3% 45%]), and increased concentrations of medium HDL particles (13% [4% 23%]) (Figure 1).
+We observed that evolocumab treatment resulted in substantial reduction in particle concentration of extremely large (80% [48%, 100%]), very large (90% [70%, 100%]), large (60% [34%, 83%]), medium (50% [36%, 63%]), small (39% [32%, 46%]) and very small VLDL (47% [40%, 53%]).
+We also observed that evolocumab treatment resulted in particle concentration reduction in IDL (53% [45%, 60%]), large (56% [48%, 65%]), medium (59% [50%, 67%]) and small LDL (55% [47%, 64%]). 
+In addition, we observed that evolocumab treatment resulted in decreased concentrations of very large HDL particles (24% [3%, 45%]), and increased concentrations of medium HDL particles (13% [4%, 23%]) (Figure 1). 
 
-![Figure 1 Mean difference between evolocumab and palacebo group, adjusting for pre-treatment lipoprotein particle concentrations. Circles represent the posterior means. Lines refer to the 95% credible intervals](./Treatment_effect_lipoproteins.png)
+Interestingly, we observed that evolocumab treatment had similar effects on lipoprotein subclasses in subjects with or without usage of lipid lowering medication. Compared to patients treated by statin, we observed that evolocumab treatment resulted in similar but larger effects on lipoproteins in subjects with treatment of both statin and ezetimibe (Figure S1). 
 
-Similar to the lipoprotein particle concentration profiles, we observed that evolocumab treatment resulted in substantial reduction of esterified cholesterol (CE), triglyceride (TG), free cholesterol (FC) and phospholipid (PL) in VLDL, IDL and LDL as well as very large HDL (Figure 2). 
-
-![Figure 2 Mean difference in lipoprotein lipid compositions between evolocumab and placebo group, adjusting for pre-treatment lipoprotein lipid concentrations. Circles represent the posterior means. Lines refer to the 95% credible intervals. CE: esterified cholesterol; FC: free cholesterol; PL: phospholipids; TG: triglyceride.](./Treatment_effect_lipoprotein_lipid.png)
-
-
+Similar to the lipoprotein particle concentration profiles, we observed that evolocumab treatment resulted in substantial reduction of esterified cholesterol (CE), triglyceride (TG), free cholesterol (FC) and phospholipid (PL) in VLDL, IDL and LDL as well as very large HDL (Figure S2). 
 The NMR metabolomics also quantified the fatty acid content in the lipoproteins. 
-We observed that treatment of evolocumab resulted in 30% [24% 36%] reduction in total fatty acids, with the largest effect on docosahexaenoic acid (DHA 40% [24% 55%]) (Figure 3).
-
-![Figure 3 Mean difference in fatty acid concentrations between evolocumab and placebo group, adjusting for pre-treatment fatty acid concentrations. Circles represent the posterior means. Lines refer to the 95% credible intervals.](./Treatment_effect_FFAs.png)
-
+We observed that treatment of evolocumab resulted in 30% [24%, 36%] reduction in total fatty acids, with the largest effect on docosahexaenoic acid (DHA 40% [24%, 55%]) (Figure S3).
 We observed no difference in concentrations of other metabolites including amino acids, fluid balance, glycolysis and ketone bodies. 
 
 ## Relationship between Lp(a) lowering and reduction in lipoprotein subclasses
 
 To identify the relationship between Lp(a) lowering and reduction in lipoprotein subclasses, we developed a multilevel multivariate model. 
-We observed that Lp(a) lowering was not associated with reduction of the 14 lipoprotein subclasses (Figure 4). 
+We observed that Lp(a) lowering was not associated with reduction of the 14 lipoprotein subclasses (Figure S4). 
+Interestingly, we observed that the reduction in medium-sized VLDL particles was associated with increasing baseline Lp(a) concentrations (Pearson correlation coefficient -0.5 [-0.8, -0.06]) (Figure 2). 
 
-![Figure 4 Relationship between Lp(a) lowering and reduction in 14 lipoprotein subclasses. Circles represent the posterior mean Pearson correlation coefficients. Lines refer to the 95% credible intervals.](./corr_lipoproteins_lpa.png)
-
-Interestingly, we observed that the reduction in medium-sized VLDL particles was associated with increasing baseline Lp(a) concentrations (Pearson correlation coefficient -0.5 [-0.8, -0.06]). 
 The correlations between baseline Lp(a) concentrations and reduction in other VLDL particles, including extremely large, very large, large, small and very small VLDLs, were -0.1 [-0.6, 0.3], -0.03 [-0.4, 0.4], -0.3 [-0.7, 0.2], -0.1 [-0.7, 0.6], and 0.2 [-0.3, 0.7], respectively. 
-
-![Figure 5 Reduction of medium VLDL particles correlated with baseline lipoprotein(a) concentrations. Every circle represents the posterior mean reduction of medium VLDL particle concentration and the posterior mean of baseline lipoprotein(a) in a patient treated with evolocumab. The verticle and horizontal bar represents the 95% credible interval. The blue dashed line represented the average percentage (50%) change in medium VLDL particle after evolocumab treatment.](./Baseline_lpa_mVLDL.png)
 
 # Discussion
 
@@ -186,28 +232,22 @@ In particular, we identified that the extent of VLDL reduction was dependent on 
 
 Overall evolocumab resulted in a 17% reduction of Lp(a), a 67% reduction of LDL-C and a 21% reduction of triglycerides. 
 Metabolomic consequences of PCSK9 inhibition with evolocumab were similar to those induced by genetic inhibition of *PCSK9* and statin therapy [@Wurtz2016; @Sliz2018]. 
-The major metabolic effects of PCSK9 inhibition were on lipoproteins and their lipid contents.  
-There is little effects on other circulating metabolites such as amino acids and ketone bodies. 
+The major metabolic effects of PCSK9 inhibition were on apoB containing lipoproteins and their lipid contents. 
+We observed that evolocumab treatment resulted in decreasing concentration of very large HDL particles and increasing concentrations of medium sized HDL particles. 
+Although our observation is consistent with a recent study of evolocumab on lipoprotein particles, there is no evidence suggesting that PCSK9 modulates HDL particle production or clearance [@Toth2018]. 
+Future studies are needed to investigate the role of PCSK9 in HDL metabolism. 
+There was little effect on other circulating metabolites such as amino acids and ketone bodies. 
 In contrast to genetic inhibition of *PCSK9* and statin therapy that had much larger effects on LDL particles than VLDL particles, we observed that evolocumab treatment induced a more substantial reduction in VLDL particles compared to LDL particles. 
 Although we observed substantial reduction in extremely and very large VLDL particle concentrations, the reduction of triglycerides was modest. 
-This is because the particle concentrations of these two VLDL particles were very low, and the VLDLs of medium and small size were the main carriers of triglycerides (Figure S1). 
+This is because the absolute concentrations of triglycerides in these two VLDL particles were very low, and the VLDLs of medium and small size were the main carriers of triglycerides (Figure S5). 
 With the help of detailed NMR metabolomics, we were able to visualize the changes in VLDL particles even though the overall change of triglycerides was modest. 
 However, since this study focused on the subjects with elevated Lp(a), future studies are required to elucidate if evolocumab has similar effect on VLDL particles in subjects without elevated Lp(a). 
-
-![Figure S1. Triglycerides in lipoprotein subclasses](./Triglycerides_in_lipoproteins.png)
-
 Our multivariate analysis showed that Lp(a) lowering did not correlate with particle concentration reduction in any of the 14 lipoprotein subclasses, suggesting alternative pathways for Lp(a) clearance, such as scavenger receptor class B type I (SR-BI) [@Yang2013] or the plasminogen receptor [@Sharma2017]. 
-
 Interestingly, we identified that subjects with higher baseline Lp(a) showed a larger reduction in medium VLDL particle concentrations after treatment with evolocumab. 
 We observed that subjects with higher baseline Lp(a) also showed tendency to have a larger reduction in extremely large and large VLDL particle concentrations after treatment with evolocumab. 
-However, those tendencies had large uncertainty due to considerable number of missing observations caused by very low concentrations that were below the detection limit (Figure S2). 
-
-![Figure S2 Particle concentrations of VLDLs.](./VLDL_particle_concentrations.png)
-
-The percentage of missing observations in extremely large and large were 69% and 47%, respectively. 
-Similarly, since the very large VLDL particle had the largest percentage of missing data (72%) among all the 14 lipoprotein subclasses, we simply had not enough data to detect the relationship between its reduction and baseline Lp(a).  
-In contrast, the percentage of missing observations in medium VLDL was 9%, allowing us to assess the relationship between its reduction and baseline Lp(a) levels. 
-On the other hand, we did not observe similar relationship between baseline Lp(a) and reduction in small and very small VLDL particles, although the percentages of missing observations were small for these two lipoprotein subclasses (6% and 3%), suggesting that Lp(a) may not influence catabolism of these two VLDL particles.    
+However, those tendencies had large uncertainty due to the fact that the number of these VLDL particles present after treatment was below the detection limit, precluding assessment of correlations (Figure S6). 
+The number of medium VLDL particles was sufficiently high to accurately assess the relationship between its reduction and baseline Lp(a) levels. 
+Surprisingly, we did not observe a similar relationship between baseline Lp(a) and reduction in small and very small VLDL particles, suggesting that Lp(a) may not influence catabolism of these two VLDL particles.    
 Our observation is in line with the association between the Lp(a)-raising genotype and decreasing concentrations of extremely large, very large, large and medium VLDL particles, but not small and very small VLDL particles [@Kettunen2016]. 
 Lp(a) particles can bind noncovalently to triglyceride-rich lipoproteins (TRL), forming a Lp(a)-TRL complex which was suggested to facilitate receptor-mediated uptake [@McConathy1994; @Gaubatz2001]. 
 This process may be particularly important in our subjects with high Lp(a), since they may have a large amount of the Lp(a)-TRL complex. 
@@ -222,20 +262,70 @@ Our study provided the first NMR metabolomics data for a PCSK9 inhibition trial.
 The detailed metabolomic profiling not only allowed us to reveal systemic effects of PCSK9 inhibition, but also to assess the relationship between Lp(a) lowering and 14 lipoprotein subclasses. 
 We did not detect statistically significant correlations between Lp(a) lowering and reduction in lipoprotein subclasses probably due to the small number of participants and considerable missing data in some lipoprotein subclasses. 
 We feel it is worth to apply the multilevel multivariate model developed in this study in a larger clinical trial to improve our understanding of interrelationship between Lp(a) lowering and metabolism of other lipoprotein subclasses. 
+Another limitation of this study is that we exclusively focused on the patients with elevated Lp(a) ($\geq$ 125nmol/L), in a future study it will be interesting to see if evolocumab treatment will result in similar effects on triglyceride-rich VLDL particles in patients with less elevated Lp(a) (for example $\geq$ 30 mg/dL).
+
+# Conclusions
 
 In conclusion, our NMR metabolomic profiling revealed that evolocumab treatment in patients with high Lp(a) markedly decreases VLDLs in addition to the well known effect on LDLs. 
 Moreover, we found that the extent of VLDL reduction was dependent on the baseline Lp(a) level. 
 Our findings suggest a marked effect of evolocumab on VLDL metabolism in subjects with elevated Lp(a). 
 
-# Authors
+# List of abbreviations
 
-# Acknowledgements
+Lp(a): lipoprotein(a)
+PCSK9: proprotein convertase subtilisin/kexin type 9
+LDL-C: LDL cholesterol
+NMR: nuclear magnetic resonance
+VVLVLDL: extremely large VLDL
+VLVLDL: very large VLDL
+LVLDL: large VLDL 
+MVLDL: medium VLDL
+SVLDL: small VLDL 
+VSVLDL: very small VLDL
+IDL: intermediate density lipoprotein
+LLDL: large LDL
+MLDL: medium LDL
+SLDL: small LDL 
+VLHDL: very large HDL
+LHDL: large HDL 
+MHDL medium HDL
+SHDL: small HDL
 
-# Sources of Funding
+# Declarations
 
-# Disclosures
+## Ethics approval and consent to participate
 
-# Affiliations
+Written informed consent was obtained from each patient included in the study. 
+The study protocol conforms to the ethical guidelines of the Declaration of Helsinki. 
+The study protocol was approved by the ethic committee of the Amsterdam UMC. 
+
+## Consent for publication
+
+Not applicable'
+
+## Availability of data and materials
+
+The datasets used and/or analysed during the current study are available from the corresponding author on reasonable request.
+
+## Competing interests 
+
+E.S.G.S. reports that his institution has received lecturing fees and advisory board fees from Amgen Inc., Regeneron, Sanofi, Akcea, Novartis and Athera. 
+All other authors declared no conflict of interest.
+
+## Funding
+
+This ANITSCHKOW trial was funded by Amgen Inc.
+
+## Authors' contributions
+
+XZ performed the analysis and composed the manuscript draft. 
+L.C.A.S. prepared the data.
+E.S.G.S. supervised the project and edited the manuscript. 
+A.K.G. supervised the project and edited the manuscript. 
+
+## Acknowledgements
+
+Not applicable
 
 # References
 
